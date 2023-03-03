@@ -25,8 +25,8 @@ class ViewController: UIViewController {
 
     
     @IBAction func changeButtonPressed(_ sender: UIButton) {
-        var n1 = fontNames.count
-        var n = Int.random(in: 0 ... n1-1)
+        let n1 = fontNames.count
+        let n = Int.random(in: 0 ... n1-1)
         let fontName = fontNames[n]
         appLabel.font = UIFont(name: fontName, size: 15.0
         )
