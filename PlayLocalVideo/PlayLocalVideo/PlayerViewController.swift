@@ -15,10 +15,11 @@ class PlayerViewController: UITableViewController {
 
     let array  = ["Hacı", "Veli", "Deli"]
     
+    let tableViewCellIdentifier = "PlayerCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: tableViewCellIdentifier)}
     
     override func viewDidAppear(_ animated: Bool)
        {
@@ -48,20 +49,72 @@ class PlayerViewController: UITableViewController {
                }
            }
        }
+    
     func fetchVideos() {
         
+        // Fetch all video assets from the Photos Library as fetch results
+        let fetchResults = PHAsset.fetchAssets(with: PHAssetMediaType.video, options: nil)
+        
+        
+      
+        // Loop through all fetched results
+        fetchResults.enumerateObjects({(object, count, stop) in
+            
+            // Add video object to our video array
+            self.videos.append(object)
+        })
+        
+        // Reload the table view on the main thread
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        
+        }
     }
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
+        return videos.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath)
-        cell.textLabel?.text = array[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: tableViewCellIdentifier, for: indexPath)
+        
+        let videoAsset = videos[indexPath.row]
+        
+        cell.textLabel?.text = "Video from \(videoAsset.creationDate ?? Date())"
+                
+        // Load video thumbnail
+        PHCachingImageManager.default().requestImage(for: videoAsset,
+                                                             targetSize: CGSize(width: 200, height: 200),
+                                                             contentMode: .aspectFill,
+                                                             options: nil) { (photo, _) in
+                    
+                    cell.imageView?.image = photo
+                    
+                }
+        
     return cell
     }
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        // Get video asset at current index
+        let whatIhave = videos[indexPath.row]
+        
+        // Fetch the video asset
+        PHCachingImageManager.default().requestAVAsset(forVideo: whatIhave, options: nil) { [weak self] (video, _, _) in
+            if let video = video
+            {
+                // Launch video player in the main thread
+                DispatchQueue.main.async {
+                    self?.playVideo(video)
+                }
+            }
+        }
+    }
+    
+    func playVideo(_ video : AVAsset){
+        
+    }
+    
 }
 
