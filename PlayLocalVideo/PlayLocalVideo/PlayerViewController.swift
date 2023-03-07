@@ -13,7 +13,7 @@ class PlayerViewController: UITableViewController {
 
     var videos: [PHAsset] = []
 
-    let array  = ["Hacı", "Veli", "Deli"]
+   // let array  = ["Hacı", "Veli", "Deli"]
     
     let tableViewCellIdentifier = "PlayerCell"
     
@@ -26,7 +26,7 @@ class PlayerViewController: UITableViewController {
            super.viewDidAppear(animated)
            
            // Request access to PhotosApp
-           PHPhotoLibrary.requestAuthorization(for: .readWrite) { [weak self] status in
+           PHPhotoLibrary.requestAuthorization(for: .readWrite) {status in
                
                // Handle restricted or denied state
                if status == .restricted || status == .denied
@@ -37,14 +37,14 @@ class PlayerViewController: UITableViewController {
                // Handle limited state
                if status == .limited
                {
-                   self?.fetchVideos()
+                   self.fetchVideos()
                    print("Status: Limited")
                }
                
                // Handle authorized state
                if status == .authorized
                {
-                   self?.fetchVideos()
+                   self.fetchVideos()
                    print("Status: Full access")
                }
            }
@@ -95,18 +95,20 @@ class PlayerViewController: UITableViewController {
         
     return cell
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
         // Get video asset at current index
         let whatIhave = videos[indexPath.row]
         
+       
         // Fetch the video asset
-        PHCachingImageManager.default().requestAVAsset(forVideo: whatIhave, options: nil) { [weak self] (video, _, _) in
+        PHCachingImageManager.default().requestAVAsset(forVideo: whatIhave, options: nil) {(video, _, _) in
             if let video = video
             {
                 // Launch video player in the main thread
                 DispatchQueue.main.async {
-                    self?.playVideo(video)
+                    self.playVideo(video)
                 }
             }
         }
@@ -114,6 +116,15 @@ class PlayerViewController: UITableViewController {
     
     func playVideo(_ video : AVAsset){
         
+            let playerItem = AVPlayerItem(asset: video)
+            let player = AVPlayer(playerItem: playerItem)
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
+            
+        
+            present(playerViewController, animated: true) {
+                playerViewController.player!.play()
+            }
     }
     
 }
