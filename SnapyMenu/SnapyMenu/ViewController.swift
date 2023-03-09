@@ -9,9 +9,21 @@ import UIKit
 
 class ViewController: UITableViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        var View1 : FirstView = FirstView(nibName: "FirstView", bundle: nil)
+        var View2 : SecondView = SecondView(nibName: "SecondView", bundle: nil)
+        
+        addChild(View1)
+        scrollView.addSubview(View1.view)
+        View1.didMove(toParent: self)
+        
+        addChild(View2)
+        scrollView.addSubview(View2.view)
+        View2.didMove(toParent: self)
     }
 
     
