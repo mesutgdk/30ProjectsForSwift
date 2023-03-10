@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstView" customModule="SnapyMenu" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdView" customModule="SnapyMenu" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,8 +18,8 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.43014651736203863" green="0.51469679813550806" blue="0.96611279249191284" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-            <point key="canvasLocation" x="117" y="20"/>
+            <color key="backgroundColor" red="0.86078917980194092" green="0.82887225629372963" blue="0.13667727315375924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <point key="canvasLocation" x="-4" y="20"/>
         </view>
     </objects>
 </document>

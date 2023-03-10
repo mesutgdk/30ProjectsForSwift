@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6343B81D29B9E2C4004ABE91 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6343B81B29B9E2C4004ABE91 /* ThirdView.swift */; };
+		6343B81E29B9E2C4004ABE91 /* ThirdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6343B81C29B9E2C4004ABE91 /* ThirdView.xib */; };
+		6398D1BC29BB02C70013766B /* Constraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6398D1BB29BB02C70013766B /* Constraits.swift */; };
 		63AC3C9529B923D500ABD1AF /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AC3C9329B923D500ABD1AF /* FirstView.swift */; };
 		63AC3C9629B923D500ABD1AF /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63AC3C9429B923D500ABD1AF /* FirstView.xib */; };
 		63AC3C9929B923F500ABD1AF /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AC3C9729B923F500ABD1AF /* SecondView.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6343B81B29B9E2C4004ABE91 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		6343B81C29B9E2C4004ABE91 /* ThirdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdView.xib; sourceTree = "<group>"; };
+		6398D1BB29BB02C70013766B /* Constraits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraits.swift; sourceTree = "<group>"; };
 		63AC3C9329B923D500ABD1AF /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		63AC3C9429B923D500ABD1AF /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		63AC3C9729B923F500ABD1AF /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
@@ -66,11 +72,14 @@
 			children = (
 				A353343129B7F2DB0061EDC2 /* AppDelegate.swift */,
 				A353343329B7F2DB0061EDC2 /* SceneDelegate.swift */,
+				6398D1BB29BB02C70013766B /* Constraits.swift */,
 				A353343529B7F2DB0061EDC2 /* ViewController.swift */,
 				63AC3C9329B923D500ABD1AF /* FirstView.swift */,
 				63AC3C9429B923D500ABD1AF /* FirstView.xib */,
 				63AC3C9729B923F500ABD1AF /* SecondView.swift */,
 				63AC3C9829B923F500ABD1AF /* SecondView.xib */,
+				6343B81B29B9E2C4004ABE91 /* ThirdView.swift */,
+				6343B81C29B9E2C4004ABE91 /* ThirdView.xib */,
 				A353343729B7F2DC0061EDC2 /* Main.storyboard */,
 				A353343A29B7F2DD0061EDC2 /* Assets.xcassets */,
 				A353343C29B7F2DD0061EDC2 /* LaunchScreen.storyboard */,
@@ -136,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6343B81E29B9E2C4004ABE91 /* ThirdView.xib in Resources */,
 				A353343E29B7F2DD0061EDC2 /* LaunchScreen.storyboard in Resources */,
 				63AC3C9A29B923F500ABD1AF /* SecondView.xib in Resources */,
 				63AC3C9629B923D500ABD1AF /* FirstView.xib in Resources */,
@@ -151,10 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6398D1BC29BB02C70013766B /* Constraits.swift in Sources */,
 				A353343629B7F2DB0061EDC2 /* ViewController.swift in Sources */,
 				63AC3C9929B923F500ABD1AF /* SecondView.swift in Sources */,
 				63AC3C9529B923D500ABD1AF /* FirstView.swift in Sources */,
 				A353343229B7F2DB0061EDC2 /* AppDelegate.swift in Sources */,
+				6343B81D29B9E2C4004ABE91 /* ThirdView.swift in Sources */,
 				A353343429B7F2DB0061EDC2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
