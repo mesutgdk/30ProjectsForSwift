@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondView" customModule="SnapyMenu" customModuleProvider="target">
             <connections>
+                <outlet property="camreView" destination="i5M-Pr-FkT" id="wkv-eS-h9c"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
