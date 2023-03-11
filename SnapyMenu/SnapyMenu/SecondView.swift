@@ -64,7 +64,10 @@ class SecondView: UIViewController, UIPickerViewDelegate, UINavigationController
             }
         }
     }
-
-
+    @IBOutlet var imageViewTemp: UIImageView!
+    
+    func didPressTakePhoto (){
+        
+    }
 }
 

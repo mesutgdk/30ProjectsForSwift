@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondView" customModule="SnapyMenu" customModuleProvider="target">
             <connections>
                 <outlet property="cameraView" destination="2gn-ap-yCQ" id="LFp-9L-bo4"/>
+                <outlet property="imageViewTemp" destination="I9H-hW-h26" id="tdm-Ew-m9P"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,18 +21,29 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gn-ap-yCQ">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="869"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gn-ap-yCQ">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I9H-hW-h26">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="sEd-Gl-Px4"/>
             <color key="backgroundColor" systemColor="systemPinkColor"/>
             <constraints>
-                <constraint firstItem="2gn-ap-yCQ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1QG-qv-bAc"/>
-                <constraint firstItem="2gn-ap-yCQ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1.01056" id="dG0-5i-Kxr"/>
-                <constraint firstItem="2gn-ap-yCQ" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="kuN-Ju-nYw"/>
-                <constraint firstItem="2gn-ap-yCQ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="oAD-CC-sx2"/>
+                <constraint firstItem="2gn-ap-yCQ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="3Cu-Kq-Sme"/>
+                <constraint firstItem="2gn-ap-yCQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="663-LS-2XH"/>
+                <constraint firstItem="2gn-ap-yCQ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" priority="250" id="9D3-vz-sdY"/>
+                <constraint firstItem="I9H-hW-h26" firstAttribute="leading" secondItem="sEd-Gl-Px4" secondAttribute="leading" id="Mtm-bm-Ydi"/>
+                <constraint firstItem="I9H-hW-h26" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VVu-eD-789"/>
+                <constraint firstItem="I9H-hW-h26" firstAttribute="trailing" secondItem="sEd-Gl-Px4" secondAttribute="trailing" id="cup-IK-pOl"/>
+                <constraint firstItem="I9H-hW-h26" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="d3O-ix-s7g"/>
+                <constraint firstAttribute="bottom" secondItem="2gn-ap-yCQ" secondAttribute="bottom" id="eNU-Zm-46S"/>
+                <constraint firstItem="2gn-ap-yCQ" firstAttribute="trailing" secondItem="sEd-Gl-Px4" secondAttribute="trailing" id="jrW-fr-z6N"/>
+                <constraint firstItem="2gn-ap-yCQ" firstAttribute="leading" secondItem="sEd-Gl-Px4" secondAttribute="leading" id="xap-yU-r9t"/>
+                <constraint firstAttribute="bottom" secondItem="I9H-hW-h26" secondAttribute="bottom" id="xsO-0e-7kn"/>
+                <constraint firstItem="I9H-hW-h26" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="yhz-sT-lbA"/>
             </constraints>
             <point key="canvasLocation" x="116.79389312977099" y="19.718309859154932"/>
         </view>
