@@ -43,8 +43,8 @@ class SecondView: UIViewController, UIPickerViewDelegate, UINavigationController
             error = error1
             input = nil
         }
-
-        if (error == nil && captureSession?.canAddInput(input) != nil) {
+ 
+        if (error == nil && ((captureSession?.canAddInput(input)) != nil) ) {
             captureSession?.addInput(input)
 
             stillImageOutput = AVCaptureStillImageOutput()
