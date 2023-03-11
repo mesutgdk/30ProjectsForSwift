@@ -13,7 +13,8 @@ class SecondView: UIViewController, UIPickerViewDelegate, UINavigationController
     var captureSession : AVCaptureSession?
     var stillImageOutput  : AVCaptureStillImageOutput?
     var previewLayer : AVCaptureVideoPreviewLayer?
-    @IBOutlet weak var cameraView: UIView!
+
+    @IBOutlet var cameraView: UIView!
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -26,29 +27,29 @@ class SecondView: UIViewController, UIPickerViewDelegate, UINavigationController
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         captureSession = AVCaptureSession ()
-        
+
         captureSession?.sessionPreset = AVCaptureSession.Preset.hd1920x1080
-        
+
         let backCamera = AVCaptureDevice.default(for: AVMediaType.video)!
-    
+
         var error : NSError?
         var input : AVCaptureDeviceInput!
-        
+
         do {
             input = try AVCaptureDeviceInput(device: backCamera)
         } catch let error1 as NSError {
             error = error1
             input = nil
         }
-        
+
         if (error == nil && captureSession?.canAddInput(input) != nil) {
             captureSession?.addInput(input)
-            
+
             stillImageOutput = AVCaptureStillImageOutput()
             stillImageOutput?.outputSettings = [AVVideoCodecKey : AVVideoCodecType.jpeg]
-            
+
             if let stillImageOutputTemp = stillImageOutput {
                 if captureSession?.canAddOutput(stillImageOutputTemp) != nil {
                     captureSession?.addOutput(stillImageOutputTemp)
@@ -63,7 +64,7 @@ class SecondView: UIViewController, UIPickerViewDelegate, UINavigationController
             }
         }
     }
-    
-    
+
+
 }
 

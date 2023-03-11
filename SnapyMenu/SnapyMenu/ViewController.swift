@@ -15,14 +15,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(scrollView.contentSize.width)
-        print(scrollView.contentSize.width)
-
-        print(scrollView.contentSize.width)
-
-        print(scrollView.contentSize.width)
-        print(scrollView.contentSize.width)
-        print(scrollView.contentSize.width)
 
 
         let View1 : FirstView = FirstView(nibName: "FirstView", bundle: nil)

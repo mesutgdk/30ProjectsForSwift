@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondView" customModule="SnapyMenu" customModuleProvider="target">
             <connections>
+                <outlet property="cameraView" destination="2gn-ap-yCQ" id="q66-Ea-K4r"/>
                 <outlet property="camreView" destination="i5M-Pr-FkT" id="wkv-eS-h9c"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,12 +20,27 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gn-ap-yCQ">
+                    <rect key="frame" x="0.0" y="8" width="393" height="861"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemPinkColor"/>
-            <point key="canvasLocation" x="117" y="20"/>
+            <constraints>
+                <constraint firstItem="2gn-ap-yCQ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1QG-qv-bAc"/>
+                <constraint firstItem="2gn-ap-yCQ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1.01056" id="dG0-5i-Kxr"/>
+                <constraint firstItem="2gn-ap-yCQ" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="kuN-Ju-nYw"/>
+                <constraint firstItem="2gn-ap-yCQ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="oAD-CC-sx2"/>
+            </constraints>
+            <point key="canvasLocation" x="116.79389312977099" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
