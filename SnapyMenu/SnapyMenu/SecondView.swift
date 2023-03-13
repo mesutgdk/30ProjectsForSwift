@@ -67,7 +67,23 @@ class SecondView: UIViewController, UIPickerViewDelegate, UINavigationController
     @IBOutlet var imageViewTemp: UIImageView!
     
     func didPressTakePhoto (){
-        
+        if let videoConnection = stillImageOutput?.connection(with: AVMediaType.video) {
+            videoConnection.videoOrientation = AVCaptureVideoOrientation.portrait
+            stillImageOutput?.captureStillImageAsynchronously(from: videoConnection, completionHandler: { (sampleBuffer, error) in
+                if (sampleBuffer != nil) {
+                    var imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer!)
+                    var dataProvider = CGDataProvider(data: imageData! as CFData)
+                    var cgImageRef = CGImage.init(jpegDataProviderSource: dataProvider!, decode: nil, shouldInterpolate: true, intent: CGColorRenderingIntent.defaultIntent)
+                    var image = UIImage(cgImage: cgImageRef!, scale: 1.0, orientation: UIImage.Orientation.right)
+                    
+                    self.imageViewTemp.image = image
+                    self.imageViewTemp.isHidden = false
+                    
+            }
+            })
+            
+        }
     }
 }
+
 
