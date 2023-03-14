@@ -88,12 +88,14 @@ class SecondView: UIViewController, UIPickerViewDelegate, UINavigationController
     
     func didTakePhoto () {
         if gotPhoto == true {
-            
+            imageViewTemp.isHidden = true
+            gotPhoto = false
         }
         else {
-            
+            captureSession?.startRunning()
+            gotPhoto = true
+            didPressTakePhoto()
         }
-        
     }
     
 }
