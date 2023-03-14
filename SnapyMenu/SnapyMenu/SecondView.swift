@@ -84,6 +84,18 @@ class SecondView: UIViewController, UIPickerViewDelegate, UINavigationController
             
         }
     }
+    var gotPhoto = Bool()
+    
+    func didTakePhoto () {
+        if gotPhoto == true {
+            
+        }
+        else {
+            
+        }
+        
+    }
+    
 }
 
 
