@@ -17,9 +17,22 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="E3f-OI-MZe">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.86078917980194092" green="0.82887225629372963" blue="0.13667727315375924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-            <point key="canvasLocation" x="-4" y="20"/>
+            <constraints>
+                <constraint firstItem="E3f-OI-MZe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="09L-Ab-zlU"/>
+                <constraint firstItem="E3f-OI-MZe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NIq-3x-y6P"/>
+                <constraint firstAttribute="bottom" secondItem="E3f-OI-MZe" secondAttribute="bottom" id="aIz-SK-dFc"/>
+                <constraint firstAttribute="trailing" secondItem="E3f-OI-MZe" secondAttribute="trailing" id="dB1-K1-BzZ"/>
+            </constraints>
+            <point key="canvasLocation" x="-5.343511450381679" y="19.718309859154932"/>
         </view>
     </objects>
+    <resources>
+        <image name="right" width="640" height="1136"/>
+    </resources>
 </document>
