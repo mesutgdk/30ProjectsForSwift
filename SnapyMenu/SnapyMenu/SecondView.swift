@@ -55,12 +55,6 @@ class SecondView: UIViewController, UIPickerViewDelegate, AVCapturePhotoCaptureD
     
     func didPressTakePhoto (){
         let settings = AVCapturePhotoSettings()
-        let previewPixelType = settings.availablePreviewPhotoPixelFormatTypes.first!
-        let previewFormat = [
-            kCVPixelBufferPixelFormatTypeKey as String: previewPixelType,
-            kCVPixelBufferWidthKey as String: "\(imageViewTemp.frame.width)",
-            kCVPixelBufferHeightKey as String: "\(imageViewTemp.frame.height)"] as [String : Any]
-        settings.previewPhotoFormat = previewFormat
         imageOutput.capturePhoto(with: settings, delegate: self)
     }
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
@@ -97,20 +91,20 @@ class SecondView: UIViewController, UIPickerViewDelegate, AVCapturePhotoCaptureD
     
 
 }
-extension UIInterfaceOrientation {
-    var avOrientation: AVCaptureVideoOrientation {
-        switch self {
-        case UIInterfaceOrientation.landscapeLeft:
-            return AVCaptureVideoOrientation.landscapeLeft
-        case UIInterfaceOrientation.landscapeRight:
-            return AVCaptureVideoOrientation.landscapeRight
-        case UIInterfaceOrientation.portraitUpsideDown:
-            return AVCaptureVideoOrientation.portraitUpsideDown
-        case UIInterfaceOrientation.portrait:
-            return AVCaptureVideoOrientation.portrait
-        default:
-            return AVCaptureVideoOrientation.portrait
-        }
-    }
-    
-}
+//extension UIInterfaceOrientation {
+//    var avOrientation: AVCaptureVideoOrientation {
+//        switch self {
+//        case UIInterfaceOrientation.landscapeLeft:
+//            return AVCaptureVideoOrientation.landscapeLeft
+//        case UIInterfaceOrientation.landscapeRight:
+//            return AVCaptureVideoOrientation.landscapeRight
+//        case UIInterfaceOrientation.portraitUpsideDown:
+//            return AVCaptureVideoOrientation.portraitUpsideDown
+//        case UIInterfaceOrientation.portrait:
+//            return AVCaptureVideoOrientation.portrait
+//        default:
+//            return AVCaptureVideoOrientation.portrait
+//        }
+//    }
+//
+//}
