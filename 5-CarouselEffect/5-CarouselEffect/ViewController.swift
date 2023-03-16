@@ -9,7 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var mortyScrollView: UIScrollView!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     let morty1 = ["title":"C'mon RickY","image":"rick1" ]
     let morty2 = ["title":"helloooooo","image":"rick2" ]
@@ -28,26 +29,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mortyArray = [morty1,morty2,morty3,morty4,morty5,morty6,morty7,morty8,morty9,morty10,morty11]
-        mortyScrollView.isPagingEnabled = true
-        mortyScrollView.contentSize = CGSize(width: view.bounds.width * CGFloat(mortyArray.count), height: 481)
-        mortyScrollView.showsHorizontalScrollIndicator = false
+        scrollView.isPagingEnabled = true
+        scrollView.contentSize = CGSize(width: view.bounds.width * CGFloat(mortyArray.count), height: 393)
+        scrollView.showsHorizontalScrollIndicator = false
         
         loadMortyImages()
     }
     
     func loadMortyImages() {
-        for (index,morty) in mortyArray.enumerated() {
-            if let mortyView = Bundle.main.loadNibNamed("Rick", owner: self)?.first as? RickView {
-                mortyView.rickImageView.image = UIImage(named: morty["image"]!)
-                mortyView.rickLabel.text = morty["title"]
+            for (index, morty) in mortyArray.enumerated() {
+                print(morty["image"]!)
                 
-                mortyScrollView.addSubview(mortyView)
-                mortyView.view.frame.size.width = view.bounds.size.width
+                if let View = Bundle.main.loadNibNamed("Rick", owner: self,options: nil)?.first as? RickView {
+                    View.rickLabel.text = morty["title"]
+                    View.rickView.image = UIImage(named: morty["image"]!)
+                    scrollView.addSubview(View)
+                    View.frame.size.width = self.view.bounds.size.width
+                    View.frame.origin.x = CGFloat(index) * self.view.bounds.size.width
+                }
+
             }
-            
         }
+           
     }
 
-
-}
 
