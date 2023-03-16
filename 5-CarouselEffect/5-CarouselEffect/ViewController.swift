@@ -12,17 +12,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    let morty1 = ["title":"C'mon RickY","image":"rick1" ]
-    let morty2 = ["title":"helloooooo","image":"rick2" ]
-    let morty3 = ["title":"Noooooo","image":"rick3" ]
-    let morty4 = ["title":"OMG","image":"rick4" ]
+    let morty1 = ["title":"C'mon RickY Wake Up!","image":"rick1" ]
+    let morty2 = ["title":"It is For YU MorTy","image":"rick2" ]
+    let morty3 = ["title":"Helllooo","image":"rick3" ]
+    let morty4 = ["title":"O_o o_O","image":"rick4" ]
     let morty5 = ["title":"Mortyyyyy","image":"rick5" ]
-    let morty6 = ["title":"O_O","image":"rick6" ]
-    let morty7 = ["title":"-o-o-","image":"rick7" ]
-    let morty8 = ["title":"maaann","image":"rick8" ]
-    let morty9 = ["title":"dont be sily","image":"rick9" ]
-    let morty10 = ["title":"pradice","image":"rick10" ]
-    let morty11 = ["title":"no way","image":"rick11" ]
+    let morty6 = ["title":"Where Are We Going!","image":"rick6" ]
+    let morty7 = ["title":"Pickle Riickkk","image":"rick7" ]
+    let morty8 = ["title":"MAAAANNN","image":"rick8" ]
+    let morty9 = ["title":"Get Schwiftyyyyy","image":"rick9" ]
+    let morty10 = ["title":"","image":"rick10" ]
+    let morty11 = ["title":"No Way Out","image":"rick11" ]
     
     var mortyArray = [Dictionary<String,String>] ()
     
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     func loadMortyImages() {
             for (index, morty) in mortyArray.enumerated() {
-                print(morty["image"]!)
+                //print(morty["image"]!)
                 
                 if let View = Bundle.main.loadNibNamed("Rick", owner: self,options: nil)?.first as? RickView {
                     View.rickLabel.text = morty["title"]
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
                     View.frame.size.width = self.view.bounds.size.width
                     View.frame.origin.x = CGFloat(index) * self.view.bounds.size.width
                 }
-
+                
             }
         }
            

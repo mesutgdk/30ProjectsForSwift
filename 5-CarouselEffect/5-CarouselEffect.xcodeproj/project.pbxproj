@@ -13,7 +13,6 @@
 		63C4ACB329C19203001301BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C4ACB129C19203001301BD /* Main.storyboard */; };
 		63C4ACB529C19204001301BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C4ACB429C19204001301BD /* Assets.xcassets */; };
 		63C4ACB829C19204001301BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C4ACB629C19204001301BD /* LaunchScreen.storyboard */; };
-		63C4ACC029C1B6CB001301BD /* Knowledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4ACBF29C1B6CB001301BD /* Knowledge.swift */; };
 		63E0902529C34B260075B726 /* RickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0902329C34B260075B726 /* RickView.swift */; };
 		63E0902629C34B260075B726 /* Rick.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E0902429C34B260075B726 /* Rick.xib */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		63C4ACB429C19204001301BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C4ACB729C19204001301BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C4ACB929C19204001301BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63C4ACBF29C1B6CB001301BD /* Knowledge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowledge.swift; sourceTree = "<group>"; };
 		63E0902329C34B260075B726 /* RickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickView.swift; sourceTree = "<group>"; };
 		63E0902429C34B260075B726 /* Rick.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Rick.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +64,6 @@
 				63C4ACAD29C19203001301BD /* SceneDelegate.swift */,
 				63C4ACAF29C19203001301BD /* ViewController.swift */,
 				63C4ACB129C19203001301BD /* Main.storyboard */,
-				63C4ACBF29C1B6CB001301BD /* Knowledge.swift */,
 				63E0902329C34B260075B726 /* RickView.swift */,
 				63E0902429C34B260075B726 /* Rick.xib */,
 				63C4ACB429C19204001301BD /* Assets.xcassets */,
@@ -150,7 +147,6 @@
 			files = (
 				63C4ACB029C19203001301BD /* ViewController.swift in Sources */,
 				63C4ACAC29C19203001301BD /* AppDelegate.swift in Sources */,
-				63C4ACC029C1B6CB001301BD /* Knowledge.swift in Sources */,
 				63C4ACAE29C19203001301BD /* SceneDelegate.swift in Sources */,
 				63E0902529C34B260075B726 /* RickView.swift in Sources */,
 			);
