@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "rick8.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
