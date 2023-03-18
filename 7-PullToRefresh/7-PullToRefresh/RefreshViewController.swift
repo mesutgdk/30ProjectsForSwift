@@ -16,6 +16,8 @@ class RefreshViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.separatorStyle = .none
+        self.tableView?.backgroundColor = UIColor.black
         
         // Do any additional setup after loading the view.
     }
@@ -30,6 +32,7 @@ class RefreshViewController: UITableViewController {
         let smiley = "\(emojiArray[n]) \(emojiArray[n]) \(emojiArray[n]) \(emojiArray[n]) \(emojiArray[n])"
         cell.textLabel?.text = smiley
         cell.textLabel?.font = UIFont.systemFont(ofSize: 40)
+        cell.backgroundColor = UIColor.black
         return cell
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
