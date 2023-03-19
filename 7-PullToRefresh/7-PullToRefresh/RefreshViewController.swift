@@ -34,7 +34,7 @@ class RefreshViewController: UITableViewController {
         let n = Int.random(in: 0 ... n1-1)
         let smiley = "\(emojiArray[n]) \(emojiArray[n]) \(emojiArray[n]) \(emojiArray[n]) \(emojiArray[n])"
         cell.textLabel?.text = smiley
-        cell.textLabel?.font = UIFont.systemFont(ofSize: 40)
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 50)
         cell.backgroundColor = UIColor.black
         return cell
     }
@@ -53,4 +53,19 @@ class RefreshViewController: UITableViewController {
     }
     
 }
+
+//extension NSObject {
+//
+//    public var emojiString: String {
+//        let pointer = Unmanaged.passUnretained(self).toOpaque()
+//        // You can adjust your range
+//        //let range = 0x1F600...0x1F64F
+//        let range = 0x1F300...0x1F3F0
+//        let index = (pointer.hashValue % range.count)
+//        let ord = range.lowerBound + index
+//        guard let scalar = UnicodeScalar(ord) else { return "❓" }
+//        return String(scalar)
+//    }
+//
+//}
 
