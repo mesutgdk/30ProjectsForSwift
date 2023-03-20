@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6368EAA829C76A93005CBC50 /* ninni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6368EAA729C76A93005CBC50 /* ninni.mp3 */; };
+		634A17FA29C85028009F7352 /* ninni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 634A17F929C85028009F7352 /* ninni.mp3 */; };
 		63C5FAA529C75BAD00ECF89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5FAA429C75BAD00ECF89F /* AppDelegate.swift */; };
 		63C5FAA729C75BAD00ECF89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5FAA629C75BAD00ECF89F /* SceneDelegate.swift */; };
 		63C5FAA929C75BAD00ECF89F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5FAA829C75BAD00ECF89F /* ViewController.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6368EAA729C76A93005CBC50 /* ninni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ninni.mp3; path = ../../../ninni.mp3; sourceTree = "<group>"; };
+		634A17F929C85028009F7352 /* ninni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ninni.mp3; sourceTree = SOURCE_ROOT; };
 		63C5FAA129C75BAD00ECF89F /* 8-Colorization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "8-Colorization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C5FAA429C75BAD00ECF89F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C5FAA629C75BAD00ECF89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				63C5FAAD29C75BAE00ECF89F /* Assets.xcassets */,
 				63C5FAAF29C75BAE00ECF89F /* LaunchScreen.storyboard */,
 				63C5FAB229C75BAE00ECF89F /* Info.plist */,
-				6368EAA729C76A93005CBC50 /* ninni.mp3 */,
+				634A17F929C85028009F7352 /* ninni.mp3 */,
 			);
 			path = "8-Colorization";
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 				63C5FAB129C75BAE00ECF89F /* LaunchScreen.storyboard in Resources */,
 				63C5FAAE29C75BAE00ECF89F /* Assets.xcassets in Resources */,
 				63C5FAAC29C75BAD00ECF89F /* Main.storyboard in Resources */,
-				6368EAA829C76A93005CBC50 /* ninni.mp3 in Resources */,
+				634A17FA29C85028009F7352 /* ninni.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +297,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,8 +324,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
