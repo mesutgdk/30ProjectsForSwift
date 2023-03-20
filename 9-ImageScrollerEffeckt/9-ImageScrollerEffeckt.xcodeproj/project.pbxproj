@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632B3DF629C8FD60001DE69F /* ZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B3DF529C8FD60001DE69F /* ZoomView.swift */; };
 		634A180829C85729009F7352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A180729C85729009F7352 /* AppDelegate.swift */; };
 		634A180A29C85729009F7352 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A180929C85729009F7352 /* SceneDelegate.swift */; };
 		634A180C29C85729009F7352 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A180B29C85729009F7352 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		632B3DF529C8FD60001DE69F /* ZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomView.swift; sourceTree = "<group>"; };
 		634A180429C85729009F7352 /* 9-ImageScrollerEffeckt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9-ImageScrollerEffeckt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		634A180729C85729009F7352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		634A180929C85729009F7352 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				634A180929C85729009F7352 /* SceneDelegate.swift */,
 				634A180B29C85729009F7352 /* ViewController.swift */,
 				634A180D29C85729009F7352 /* Main.storyboard */,
+				632B3DF529C8FD60001DE69F /* ZoomView.swift */,
 				634A181029C8572A009F7352 /* Assets.xcassets */,
 				634A181229C8572A009F7352 /* LaunchScreen.storyboard */,
 				634A181529C8572A009F7352 /* Info.plist */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634A180C29C85729009F7352 /* ViewController.swift in Sources */,
+				632B3DF629C8FD60001DE69F /* ZoomView.swift in Sources */,
 				634A180829C85729009F7352 /* AppDelegate.swift in Sources */,
 				634A180A29C85729009F7352 /* SceneDelegate.swift in Sources */,
 			);
@@ -445,6 +449,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +478,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
