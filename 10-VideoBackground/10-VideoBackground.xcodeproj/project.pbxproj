@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		632B3E0429C9DC1B001DE69F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B3E0329C9DC1B001DE69F /* AppDelegate.swift */; };
 		632B3E0629C9DC1B001DE69F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B3E0529C9DC1B001DE69F /* SceneDelegate.swift */; };
-		632B3E0829C9DC1B001DE69F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B3E0729C9DC1B001DE69F /* ViewController.swift */; };
+		632B3E0829C9DC1B001DE69F /* WellComeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B3E0729C9DC1B001DE69F /* WellComeScreenVC.swift */; };
 		632B3E0B29C9DC1B001DE69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632B3E0929C9DC1B001DE69F /* Main.storyboard */; };
 		632B3E0D29C9DC1D001DE69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632B3E0C29C9DC1D001DE69F /* Assets.xcassets */; };
 		632B3E1029C9DC1D001DE69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632B3E0E29C9DC1D001DE69F /* LaunchScreen.storyboard */; };
+		632B3E1C29CA6106001DE69F /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B3E1B29CA6106001DE69F /* LoginScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		632B3E0029C9DC1B001DE69F /* 10-VideoBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10-VideoBackground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632B3E0329C9DC1B001DE69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632B3E0529C9DC1B001DE69F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		632B3E0729C9DC1B001DE69F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		632B3E0729C9DC1B001DE69F /* WellComeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellComeScreenVC.swift; sourceTree = "<group>"; };
 		632B3E0A29C9DC1B001DE69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		632B3E0C29C9DC1D001DE69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632B3E0F29C9DC1D001DE69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632B3E1129C9DC1D001DE69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632B3E1729CA5EF9001DE69F /* background1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background1.mp4; sourceTree = SOURCE_ROOT; };
+		632B3E1829CA5EF9001DE69F /* background2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background2.mp4; sourceTree = SOURCE_ROOT; };
+		632B3E1B29CA6106001DE69F /* LoginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,14 @@
 			children = (
 				632B3E0329C9DC1B001DE69F /* AppDelegate.swift */,
 				632B3E0529C9DC1B001DE69F /* SceneDelegate.swift */,
-				632B3E0729C9DC1B001DE69F /* ViewController.swift */,
+				632B3E1B29CA6106001DE69F /* LoginScreenVC.swift */,
+				632B3E0729C9DC1B001DE69F /* WellComeScreenVC.swift */,
 				632B3E0929C9DC1B001DE69F /* Main.storyboard */,
 				632B3E0C29C9DC1D001DE69F /* Assets.xcassets */,
 				632B3E0E29C9DC1D001DE69F /* LaunchScreen.storyboard */,
 				632B3E1129C9DC1D001DE69F /* Info.plist */,
+				632B3E1729CA5EF9001DE69F /* background1.mp4 */,
+				632B3E1829CA5EF9001DE69F /* background2.mp4 */,
 			);
 			path = "10-VideoBackground";
 			sourceTree = "<group>";
@@ -138,7 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632B3E0829C9DC1B001DE69F /* ViewController.swift in Sources */,
+				632B3E1C29CA6106001DE69F /* LoginScreenVC.swift in Sources */,
+				632B3E0829C9DC1B001DE69F /* WellComeScreenVC.swift in Sources */,
 				632B3E0429C9DC1B001DE69F /* AppDelegate.swift in Sources */,
 				632B3E0629C9DC1B001DE69F /* SceneDelegate.swift in Sources */,
 			);

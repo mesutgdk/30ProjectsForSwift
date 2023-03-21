@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Well Come ScreenVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WellComeScreenVC" customModule="_0_VideoBackground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="pp4-vG-sfb">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="877"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w97-5P-Ew0">
+                                <rect key="frame" x="50.666666666666657" y="650" width="292" height="52"/>
+                                <color key="backgroundColor" red="0.43312352907385404" green="0.96611279250000004" blue="0.51476179980396297" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="7v8-AF-q9d" kind="presentation" modalPresentationStyle="fullScreen" id="U2Q-k6-Jb5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kp-Jw-M65">
+                                <rect key="frame" x="50" y="728" width="293" height="52"/>
+                                <color key="backgroundColor" red="0.43014651739999998" green="0.51469679810000002" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sing Up"/>
+                                <connections>
+                                    <segue destination="7v8-AF-q9d" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="nf6-6F-D0P"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Kp-Jw-M65" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="080-KG-fLN"/>
+                            <constraint firstItem="pp4-vG-sfb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Bo-t2-HkN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="pp4-vG-sfb" secondAttribute="top" constant="59" id="APh-Ct-vdF"/>
+                            <constraint firstItem="w97-5P-Ew0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KWM-ck-Fij"/>
+                            <constraint firstItem="pp4-vG-sfb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MWj-M4-U27"/>
+                            <constraint firstItem="pp4-vG-sfb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="OQ5-Dg-4cy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w97-5P-Ew0" secondAttribute="bottom" constant="116" id="Ygy-tc-1Qa"/>
+                            <constraint firstItem="pp4-vG-sfb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aL6-Se-xGf"/>
+                            <constraint firstItem="pp4-vG-sfb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gh7-7g-GAD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Kp-Jw-M65" secondAttribute="bottom" constant="38" id="gs5-Zz-kTb"/>
+                            <constraint firstItem="w97-5P-Ew0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0610329" id="jml-NM-oKS"/>
+                            <constraint firstItem="9Kp-Jw-M65" firstAttribute="centerX" secondItem="w97-5P-Ew0" secondAttribute="centerX" id="lXP-Gy-tVC"/>
+                            <constraint firstItem="9Kp-Jw-M65" firstAttribute="top" secondItem="w97-5P-Ew0" secondAttribute="bottom" constant="26" id="sUK-iq-jOa"/>
+                            <constraint firstItem="w97-5P-Ew0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="73:213" id="u0s-l6-PQF"/>
+                            <constraint firstItem="w97-5P-Ew0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.743003" id="vFq-tF-xi8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-196.18320610687022" y="5.6338028169014089"/>
+        </scene>
+        <!--Login ScreenVC-->
+        <scene sceneID="JsD-oN-18a">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="7v8-AF-q9d" customClass="LoginScreenVC" customModule="_0_VideoBackground" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Gj-cg-VIt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mkh-sN-3rH"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jgl-J1-2wj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnZ-tz-Ala" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650" y="6"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nf6-6F-D0P"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="appIcon" width="288.5" height="216.5"/>
+    </resources>
 </document>
