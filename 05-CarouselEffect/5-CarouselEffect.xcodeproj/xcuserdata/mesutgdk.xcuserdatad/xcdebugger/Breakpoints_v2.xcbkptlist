@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EA233193-0ACA-44DA-9217-5F8515CD2198"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14073D95-C06A-4F85-B0CD-B3B6FA8F9960"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5-CarouselEffect/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D688E57-016F-47CC-847A-30701BA3AD14"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5-CarouselEffect/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "1D688E57-016F-47CC-847A-30701BA3AD14 - 8b8527a533a881aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; __CarouselEffect.ViewController"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "1D688E57-016F-47CC-847A-30701BA3AD14 - 39372ded8920a76d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; __CarouselEffect.ViewController"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "1D688E57-016F-47CC-847A-30701BA3AD14 - 585eb815aa31f5ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;__CarouselEffect.ViewController&gt;"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "1D688E57-016F-47CC-847A-30701BA3AD14 - ab972e6d56a63466"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;__CarouselEffect.ViewController&gt;"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "1D688E57-016F-47CC-847A-30701BA3AD14 - 2e36dd332cebfd41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.__deallocating_deinit"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7F3239F-34FA-480A-ACBA-89087CA3AF0B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5-CarouselEffect/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F7F3239F-34FA-480A-ACBA-89087CA3AF0B - 197c1fae7f4007c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.mortyScrollView.getter : Swift.Optional&lt;__C.UIScrollView&gt;"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "F7F3239F-34FA-480A-ACBA-89087CA3AF0B - 92b34ea5a2f227dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.mortyScrollView.setter : Swift.Optional&lt;__C.UIScrollView&gt;"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "F7F3239F-34FA-480A-ACBA-89087CA3AF0B - db4711b40df6fcb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.mortyScrollView.modify : Swift.Optional&lt;__C.UIScrollView&gt;"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "F7F3239F-34FA-480A-ACBA-89087CA3AF0B - 97b5a8ca868d244d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.mortyScrollView.modify : Swift.Optional&lt;__C.UIScrollView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "F7F3239F-34FA-480A-ACBA-89087CA3AF0B - 39372ded8920a76d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; __CarouselEffect.ViewController"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "F7F3239F-34FA-480A-ACBA-89087CA3AF0B - ab972e6d56a63466"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;__CarouselEffect.ViewController&gt;"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "068623E3-B5EF-4A22-8D3D-A918784E9D69"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5-CarouselEffect/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FFABFB1E-AFE4-49CC-A1CB-ED5990373DBE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5-CarouselEffect/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97AC7C8B-B2C2-4C53-AB8F-2FAF3F28E6D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5-CarouselEffect/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "97AC7C8B-B2C2-4C53-AB8F-2FAF3F28E6D6 - 378930cbce558053"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.morty1.getter : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "97AC7C8B-B2C2-4C53-AB8F-2FAF3F28E6D6 - 39372ded8920a72b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; __CarouselEffect.ViewController"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "97AC7C8B-B2C2-4C53-AB8F-2FAF3F28E6D6 - ab972e6d56a63420"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CarouselEffect.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;__CarouselEffect.ViewController&gt;"
+                  moduleName = "5-CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/5-CarouselEffect/5-CarouselEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9FA9ADA-56BB-4C8E-A3A0-081379D4995B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5-CarouselEffect/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
