@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LocationViewController" customModule="__FindMyLocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="0so-Gz-V0v">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2v-E8-Yqf">
+                                <rect key="frame" x="0.0" y="95" width="393" height="662"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYd-01-uS5">
+                                        <rect key="frame" x="93" y="621" width="207" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="207" id="mGp-RN-4Ll"/>
+                                            <constraint firstAttribute="height" constant="41" id="s5l-kw-8bx"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Find MyLocation">
+                                            <imageReference key="image" image="location.circle.fill" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="locationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHj-gf-nhB"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcb-Pv-Zdr">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="33.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="393" id="vf7-KH-2aE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gcb-Pv-Zdr" firstAttribute="top" secondItem="d2v-E8-Yqf" secondAttribute="top" id="0iL-oe-xaN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gcb-Pv-Zdr" secondAttribute="trailing" id="BiT-EJ-Qq8"/>
+                                    <constraint firstItem="Gcb-Pv-Zdr" firstAttribute="top" secondItem="d2v-E8-Yqf" secondAttribute="top" id="dbV-7I-uyf"/>
+                                    <constraint firstItem="Gcb-Pv-Zdr" firstAttribute="centerX" secondItem="d2v-E8-Yqf" secondAttribute="centerX" id="pW1-2N-afb"/>
+                                    <constraint firstItem="Gcb-Pv-Zdr" firstAttribute="leading" secondItem="d2v-E8-Yqf" secondAttribute="leading" id="swb-Px-5bm"/>
+                                    <constraint firstAttribute="bottom" secondItem="UYd-01-uS5" secondAttribute="bottom" id="vqN-hz-0T2"/>
+                                    <constraint firstItem="UYd-01-uS5" firstAttribute="centerX" secondItem="d2v-E8-Yqf" secondAttribute="centerX" id="xUU-jO-TiJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0so-Gz-V0v" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GF1-Nn-33c"/>
+                            <constraint firstAttribute="bottom" secondItem="0so-Gz-V0v" secondAttribute="bottom" id="LA6-Mk-z1J"/>
+                            <constraint firstItem="0so-Gz-V0v" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M70-uD-pEc"/>
+                            <constraint firstItem="d2v-E8-Yqf" firstAttribute="centerY" secondItem="0so-Gz-V0v" secondAttribute="centerY" id="SLI-B4-Wnk"/>
+                            <constraint firstItem="d2v-E8-Yqf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="WgR-3H-iJn"/>
+                            <constraint firstItem="d2v-E8-Yqf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XWO-xf-MTu"/>
+                            <constraint firstItem="d2v-E8-Yqf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eAy-15-IqS"/>
+                            <constraint firstItem="0so-Gz-V0v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jFW-Lq-vMH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="Gcb-Pv-Zdr" id="OKt-30-kBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51.145038167938928" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundImage" width="300" height="450"/>
+        <image name="location.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
