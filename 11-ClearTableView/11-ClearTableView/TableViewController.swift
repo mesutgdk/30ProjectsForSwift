@@ -15,6 +15,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
+        navigationItem.title = "OUR OATH"
             }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
