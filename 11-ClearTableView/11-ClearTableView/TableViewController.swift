@@ -14,21 +14,33 @@ class TableViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         tableView.reloadData()
-    }
+            }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ourOath.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellHeight = tableView(self.tableView, heightForRowAtIndexPath: NSIndexPath(forRow: indexPath.row, inSection: indexPath.section))
 
-        let cell = TableViewCell(frame: CGRectMake(0, 0, self.view.frame.width, cellHeight), title: titleArray[indexPath.row])
-        //tableView.dequeueReusableCell(withIdentifier: cell, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cell) as! TableViewCell
         cell.cellLabel.text = ourOath[indexPath.row]
+        cell.backgroundColor = cellColorForIndex(indexPath: indexPath)
         return cell
     }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+        
+    }
 }
-
+extension TableViewController {
+    //MARK: Instance Methods
+    func cellColorForIndex(indexPath:IndexPath) -> UIColor{
+    //cast row and section to CGFloat
+    let row = CGFloat(indexPath.row)
+        
+    //compute row as hue and section as saturation
+    let saturation  = 1.0 - row / CGFloat(ourOath.count)
+    return UIColor(hue: 2, saturation: saturation, brightness: 1.0, alpha: 1.0)
+    }
+}
