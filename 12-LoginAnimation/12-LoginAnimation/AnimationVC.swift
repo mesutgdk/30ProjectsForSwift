@@ -17,8 +17,17 @@ class AnimationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        animateImage()
         // Do any additional setup after loading the view.
     }
+    func animateImage() {
+            UIView.animate(withDuration: 1.0, delay: 0, options: [.repeat, .autoreverse], animations: {
+                self.mailTextField.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+                self.passwordTextField.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+                self.playImageView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+
+            }, completion: nil)
+          
+        }
 
 }
