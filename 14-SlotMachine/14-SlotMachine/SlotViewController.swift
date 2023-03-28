@@ -36,7 +36,13 @@ class SlotViewController: UIViewController, UIPickerViewDataSource {
         let thirdSlot = slotPickerView.selectedRow(inComponent: 2)
        // print("\(firstSlot)\(secondSlot)\(thirdSlot)")
         if firstSlot != secondSlot {
-            
+            prizeLabel.text = "TRY AGAIN!"
+        } else {
+            if secondSlot != thirdSlot {
+                prizeLabel.text = "ONE MORE TIME!"
+            }else {
+                prizeLabel.text = "BINGOOOOOOO"
+            }
         }
     }
     
@@ -66,10 +72,10 @@ extension SlotViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let pickerLabel = UILabel()
         let titleData = slotArray[row]
-        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.font:UIFont(name: "Georgia", size: 26.0)!,NSAttributedString.Key.foregroundColor:UIColor.black])
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.font:UIFont(name: "Georgia", size: 35.0)!,NSAttributedString.Key.foregroundColor:UIColor.black])
         pickerLabel.attributedText = myTitle
         let hue = CGFloat(row)/CGFloat(slotArray.count)
-        pickerLabel.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness:1.0, alpha: 1.0)
+        pickerLabel.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness:1.0, alpha: 0.7)
         pickerLabel.textAlignment = .center
         return pickerLabel
     }
