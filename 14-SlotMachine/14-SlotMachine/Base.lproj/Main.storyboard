@@ -36,13 +36,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="Xb6-jZ-jRu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="34"/>
                                 <color key="textColor" red="0.96611279250000004" green="0.8187897046" blue="0.68894330670000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="figure.mind.and.body" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hML-va-tYO">
-                                <rect key="frame" x="76" y="84.333333333333329" width="240" height="143.33333333333331"/>
-                                <color key="tintColor" systemColor="systemGray6Color"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="figure.mind.and.body" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hML-va-tYO">
+                                <rect key="frame" x="76" y="120.33333333333333" width="240" height="143.33333333333331"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="146" id="LnQ-cL-S56"/>
                                 </constraints>
@@ -80,7 +80,7 @@
                             <constraint firstItem="CkI-8d-vzB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="dbo-mi-ohV"/>
                             <constraint firstItem="CkI-8d-vzB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="iGc-oz-2iM"/>
                             <constraint firstItem="sOz-fd-vtP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="iRA-93-z4o"/>
-                            <constraint firstItem="hML-va-tYO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="jqH-Vt-UbU"/>
+                            <constraint firstItem="hML-va-tYO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="jqH-Vt-UbU"/>
                             <constraint firstItem="hML-va-tYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="n8q-2j-el8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hML-va-tYO" secondAttribute="trailing" constant="77" id="uGc-0n-zOy"/>
                             <constraint firstItem="N9z-VR-FMp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="vIP-VU-R0V"/>
@@ -101,11 +101,11 @@
     <resources>
         <image name="center" width="3000" height="1688"/>
         <image name="figure.mind.and.body" catalog="system" width="128" height="102"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

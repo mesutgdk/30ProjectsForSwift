@@ -10,7 +10,7 @@ import UIKit
 class SlotViewController: UIViewController, UIPickerViewDataSource {
     
     let slotArray: [String] = ["🍬","🫦","🖕","🎃","💩","🍋","🍒","🫵"]
-
+    var cheat: Bool = false
     @IBOutlet weak var appImage: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var slotPickerView: UIPickerView!
@@ -23,11 +23,15 @@ class SlotViewController: UIViewController, UIPickerViewDataSource {
         prizeLabel.text = ""
     }
 
+    @IBAction func cheatIsWorking(_ sender: UISwitch) {
+        cheat = true
+        print(cheat)
+    }
     @IBAction func goButtonPressed(_ sender: UIButton) {
-        
+       
         var randomNum : Int {
-         return Int.random(in: 0...8)
-        }
+            return Int.random(in: 0...7)}
+            
         slotPickerView.selectRow(randomNum, inComponent: 0, animated: true)
         slotPickerView.selectRow(randomNum, inComponent: 1, animated: true)
         slotPickerView.selectRow(randomNum, inComponent: 2, animated: true)
