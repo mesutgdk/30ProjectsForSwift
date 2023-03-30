@@ -18,20 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Eksi" translatesAutoresizingMaskIntoConstraints="NO" id="fdy-MX-HSH">
-                                <rect key="frame" x="121.66666666666669" y="353.66666666666669" width="150" height="150"/>
+                                <rect key="frame" x="121" y="355" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="awy-tt-dYl"/>
-                                    <constraint firstAttribute="width" constant="150" id="qat-8n-pjf"/>
+                                    <constraint firstAttribute="width" constant="150" id="KvT-HD-7qC"/>
+                                    <constraint firstAttribute="height" constant="150" id="Pmo-QC-1ao"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fdy-MX-HSH" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.381679" id="Srq-Lz-yBr"/>
-                            <constraint firstItem="fdy-MX-HSH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10" id="bLz-U3-5Bp"/>
-                            <constraint firstItem="fdy-MX-HSH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="brz-yD-6t5"/>
-                            <constraint firstItem="fdy-MX-HSH" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.197628" id="fjL-nX-LcO"/>
+                            <constraint firstItem="fdy-MX-HSH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-9" id="5tf-Bk-Kb6"/>
+                            <constraint firstItem="fdy-MX-HSH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QPp-g4-Dqr"/>
                         </constraints>
                     </view>
                 </viewController>
