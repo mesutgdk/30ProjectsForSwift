@@ -31,7 +31,7 @@ class AnimatedViewController: UIViewController {
     
     private func animate() {
         UIView.animate(withDuration: 1) {
-            let size = self.view.frame.size.width * 4
+            let size = self.view.frame.size.width * 5.7
             let diffX = size - self.view.frame.size.width
             let diffY = self.view.frame.size.height - size
             
@@ -47,10 +47,16 @@ class AnimatedViewController: UIViewController {
             self.imageView.alpha = 0
         } completion: { finished in
             if finished {
-                let viewController = HomeViewController()
-                viewController.modalTransitionStyle = .crossDissolve
-                viewController.modalPresentationStyle = .fullScreen
-                self.present(viewController, animated: true)
+                //geçiş hızlı oluyor, yavaşlatmak gerekli
+                DispatchQueue.main.asyncAfter(deadline: .now()+0.5, execute: {
+                    self.performSegue(withIdentifier: "GoToFS", sender: nil)
+                    
+//                    let viewController = HomeViewController()
+//                    viewController.modalTransitionStyle = .crossDissolve
+//                    viewController.modalPresentationStyle = .fullScreen
+//                    self.present(viewController, animated: true)
+                })
+                
             }
         }
 

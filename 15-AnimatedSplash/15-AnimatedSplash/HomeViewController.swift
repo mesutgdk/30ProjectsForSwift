@@ -8,11 +8,22 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+//    let imageView = UIImageView(image: UIImage(named: "FirstScreen")!)
+//
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .link
-        // Do any additional setup after loading the view.
+////        imageView.center = view.center
+//        imageView.frame.size.height = view.frame.height
+//        imageView.frame.size.width = view.frame.width
+//        imageView.image
+//
+//        view.addSubview(imageView)
+        view.backgroundColor = .systemBackground
+
+       
     }
     
 

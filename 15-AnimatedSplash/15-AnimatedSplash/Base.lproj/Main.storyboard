@@ -12,31 +12,50 @@
         <!--Animated View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AnimatedViewController" customModule="_5_AnimatedSplash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="AnimatedViewController" customModule="_5_AnimatedSplash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tvf-GD-QvF">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="tvf-GD-QvF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7bN-yt-PHj"/>
-                            <constraint firstAttribute="bottom" secondItem="tvf-GD-QvF" secondAttribute="bottom" id="A8d-Dc-mp3"/>
-                            <constraint firstItem="tvf-GD-QvF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LRx-aU-tSb"/>
-                            <constraint firstItem="tvf-GD-QvF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vfq-F5-lEb"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="hvn-GV-rEL" kind="presentation" identifier="GoToFS" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HiM-ge-eas"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="QXZ-5j-Oi8">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="hvn-GV-rEL" customClass="HomeViewController" customModule="_5_AnimatedSplash" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XFk-Kt-1VC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstScreen" translatesAutoresizingMaskIntoConstraints="NO" id="8QM-Cc-lpF">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FWe-pB-46T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8QM-Cc-lpF" secondAttribute="bottom" id="HbH-nr-yKT"/>
+                            <constraint firstItem="8QM-Cc-lpF" firstAttribute="leading" secondItem="FWe-pB-46T" secondAttribute="leading" id="Hmv-v9-v9R"/>
+                            <constraint firstItem="8QM-Cc-lpF" firstAttribute="trailing" secondItem="FWe-pB-46T" secondAttribute="trailing" id="Qyf-05-obY"/>
+                            <constraint firstItem="8QM-Cc-lpF" firstAttribute="top" secondItem="XFk-Kt-1VC" secondAttribute="top" id="mPX-Mw-vi3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KXI-td-fUz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817.55725190839689" y="-2.1126760563380285"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="FirstScreen" width="1080" height="1973"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -17,19 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eksi" translatesAutoresizingMaskIntoConstraints="NO" id="fdy-MX-HSH">
-                                <rect key="frame" x="121.66666666666669" y="363.66666666666669" width="150" height="150.00000000000006"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Eksi" translatesAutoresizingMaskIntoConstraints="NO" id="fdy-MX-HSH">
+                                <rect key="frame" x="121.66666666666669" y="353.66666666666669" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="WhM-e2-JQB"/>
-                                    <constraint firstAttribute="height" constant="150" id="qWK-pV-xoR"/>
+                                    <constraint firstAttribute="height" constant="150" id="awy-tt-dYl"/>
+                                    <constraint firstAttribute="width" constant="150" id="qat-8n-pjf"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fdy-MX-HSH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4sx-3f-x72"/>
-                            <constraint firstItem="fdy-MX-HSH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="L8g-Ln-ZAb"/>
+                            <constraint firstItem="fdy-MX-HSH" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.381679" id="Srq-Lz-yBr"/>
+                            <constraint firstItem="fdy-MX-HSH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10" id="bLz-U3-5Bp"/>
+                            <constraint firstItem="fdy-MX-HSH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="brz-yD-6t5"/>
+                            <constraint firstItem="fdy-MX-HSH" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.197628" id="fjL-nX-LcO"/>
                         </constraints>
                     </view>
                 </viewController>
