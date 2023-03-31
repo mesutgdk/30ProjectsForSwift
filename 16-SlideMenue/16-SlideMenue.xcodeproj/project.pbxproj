@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6326D48829D709B20005F177 /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326D48729D709B20005F177 /* NewTableViewCell.swift */; };
 		638436AE29D6234200D05063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638436AD29D6234200D05063 /* AppDelegate.swift */; };
 		638436B029D6234200D05063 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638436AF29D6234200D05063 /* SceneDelegate.swift */; };
 		638436B229D6234200D05063 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638436B129D6234200D05063 /* MainTableViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6326D48729D709B20005F177 /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
 		638436AA29D6234200D05063 /* 16-SlideMenue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "16-SlideMenue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638436AD29D6234200D05063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638436AF29D6234200D05063 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				638436AD29D6234200D05063 /* AppDelegate.swift */,
 				638436AF29D6234200D05063 /* SceneDelegate.swift */,
 				638436B129D6234200D05063 /* MainTableViewController.swift */,
+				6326D48729D709B20005F177 /* NewTableViewCell.swift */,
 				638436C629D62AE000D05063 /* Model */,
 				638436C729D62B2000D05063 /* View */,
 				638436B629D6234300D05063 /* Assets.xcassets */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				638436B229D6234200D05063 /* MainTableViewController.swift in Sources */,
+				6326D48829D709B20005F177 /* NewTableViewCell.swift in Sources */,
 				638436C529D62AD900D05063 /* Profile.swift in Sources */,
 				638436AE29D6234200D05063 /* AppDelegate.swift in Sources */,
 				638436B029D6234200D05063 /* SceneDelegate.swift in Sources */,
