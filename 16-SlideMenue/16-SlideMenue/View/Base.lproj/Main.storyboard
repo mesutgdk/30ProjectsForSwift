@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -82,15 +81,69 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xVC-uf-g7D">
-                        <barButtonItem key="leftBarButtonItem" title="item" landscapeImage="menu" springLoaded="YES" id="0tr-wM-yoV">
-                            <imageReference key="image" image="menu" symbolScale="default" renderingMode="original" variableValue="1"/>
-                            <color key="tintColor" systemColor="tertiarySystemFillColor"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="menu" id="s4O-hQ-XcC">
+                            <color key="tintColor" red="0.47207177309999998" green="0.71053865039999997" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="Djk-Sm-dEu" kind="show" id="xsj-UH-o2x"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zJ-Wx-txR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1087.7862595419847" y="88.732394366197184"/>
+        </scene>
+        <!--Menu Table View Controller-->
+        <scene sceneID="Gq3-B9-UR4">
+            <objects>
+                <tableViewController id="Djk-Sm-dEu" customClass="MenuTableViewController" customModule="_6_SlideMenue" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="sGB-ed-TAF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" rowHeight="107" id="Whm-Co-ZNk" customClass="MenuTableViewCell" customModule="_6_SlideMenue" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="107"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Whm-Co-ZNk" id="Arf-Ad-KZ0">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="107"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTx-pg-cnU">
+                                            <rect key="frame" x="20.000000000000004" y="11" width="41.333333333333343" height="50"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Sya-V6-eXj"/>
+                                                <constraint firstAttribute="height" constant="50" id="nST-2S-5WJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aTx-pg-cnU" secondAttribute="trailing" constant="20" symbolic="YES" id="1EK-Jp-8vn"/>
+                                        <constraint firstItem="aTx-pg-cnU" firstAttribute="leading" secondItem="Arf-Ad-KZ0" secondAttribute="leadingMargin" id="lhj-SD-ZiP"/>
+                                        <constraint firstItem="aTx-pg-cnU" firstAttribute="top" secondItem="Arf-Ad-KZ0" secondAttribute="topMargin" id="qPP-O9-PrW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="menuLabel" destination="aTx-pg-cnU" id="mMa-6q-g8Z"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Djk-Sm-dEu" id="1vb-e7-krO"/>
+                            <outlet property="delegate" destination="Djk-Sm-dEu" id="LHf-ep-fZr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="pPN-Gq-9qK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGF-TA-w0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1907.6335877862596" y="88.732394366197184"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M3c-XE-ZKO">
@@ -100,6 +153,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9vU-Ea-DU3">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -115,9 +172,6 @@
         <image name="menu" width="112.5" height="112.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tertiarySystemFillColor">
-            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
