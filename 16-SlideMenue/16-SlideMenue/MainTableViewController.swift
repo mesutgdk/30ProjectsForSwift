@@ -46,7 +46,7 @@ extension MainTableViewController {
     
     
     func append (){
-        self.profiles.append(Profile(sender: "pic1", body: "body3", name: "Uzeyir KABALI", title: "Dentist"))
+        self.profiles.append(Profile(sender: "pic1", body: "body3", name: "Khan KingSlayer", title: "Dentist"))
         self.profiles.append(Profile(sender: "pic2", body: "body2", name: "Kim Yon BBer", title: "Plumber"))
         self.profiles.append(Profile(sender: "pic3", body: "body4", name: "Yone Hasagi", title: "Engineer"))
         self.profiles.append(Profile(sender: "pic4", body: "body1", name: "Zabashat Anchor", title: "Job Security Specialist"))

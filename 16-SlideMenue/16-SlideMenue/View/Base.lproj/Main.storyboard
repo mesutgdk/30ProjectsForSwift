@@ -82,8 +82,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xVC-uf-g7D">
-                        <barButtonItem key="leftBarButtonItem" title="item" style="done" id="0tr-wM-yoV">
-                            <imageReference key="image" image="calendar.day.timeline.leading" catalog="system" symbolScale="default" renderingMode="original" variableValue="1"/>
+                        <barButtonItem key="leftBarButtonItem" title="item" landscapeImage="menu" springLoaded="YES" id="0tr-wM-yoV">
+                            <imageReference key="image" image="menu" symbolScale="default" renderingMode="original" variableValue="1"/>
                             <color key="tintColor" systemColor="tertiarySystemFillColor"/>
                         </barButtonItem>
                     </navigationItem>
@@ -96,7 +96,6 @@
         <scene sceneID="M3c-XE-ZKO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s95-7X-SAv" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9vU-Ea-DU3">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -113,7 +112,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar.day.timeline.leading" catalog="system" width="128" height="91"/>
+        <image name="menu" width="112.5" height="112.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
