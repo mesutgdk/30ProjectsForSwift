@@ -7,13 +7,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController  {
+    
+    @IBOutlet weak var screenImage: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let interaction = UIContextMenuInteraction(delegate: self)
+        screenImage.addInteraction(interaction)
     }
 
 
+}
+
+extension ViewController: UIContextMenuInteractionDelegate{
+    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
+        return nil
+    }
 }
 
