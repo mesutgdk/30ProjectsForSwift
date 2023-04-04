@@ -11,23 +11,31 @@ class MainViewController: UIViewController  {
     
     @IBOutlet weak var screenImage: UIImageView!
     
+    let transitionManager = TransitionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let interaction = UIContextMenuInteraction(delegate: self)
-        screenImage.addInteraction(interaction)
-    }
+        
+        
+     }
     
     @IBAction func editButtonPressed(_ sender: UIButton) {
-        print("editbuttonpressed")
+//        present(MenuViewController, animated: false) as! UIViewController
+//
         
-        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // this gets a reference to the screen that we're about to transition to
+        let toViewController = segue.destination as UIViewController
+                
+        // instead of using the default transition animation, we'll ask
+        // the segue to use our custom TransitionManager object to manage the transition animation
+        toViewController.transitioningDelegate = self.transitionManager
+        }
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return self.presentingViewController == nil ? UIStatusBarStyle.default : UIStatusBarStyle.lightContent
     }
 }
 
-extension MainViewController: UIContextMenuInteractionDelegate{
-    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
-        return nil
-    }
-}
+
 

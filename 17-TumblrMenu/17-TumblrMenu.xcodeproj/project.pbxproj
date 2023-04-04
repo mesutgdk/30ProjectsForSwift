@@ -14,6 +14,7 @@
 		6398E36D29D8C05200B23077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6398E36B29D8C05200B23077 /* Main.storyboard */; };
 		6398E36F29D8C05300B23077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6398E36E29D8C05300B23077 /* Assets.xcassets */; };
 		6398E37229D8C05300B23077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6398E37029D8C05300B23077 /* LaunchScreen.storyboard */; };
+		639C0BAF29DC0BA20018DA05 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C0BAE29DC0BA20018DA05 /* TransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6398E36E29D8C05300B23077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6398E37129D8C05300B23077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6398E37329D8C05300B23077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		639C0BAE29DC0BA20018DA05 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				6398E36529D8C05200B23077 /* AppDelegate.swift */,
 				6398E36729D8C05200B23077 /* SceneDelegate.swift */,
 				6398E36929D8C05200B23077 /* MainViewController.swift */,
+				639C0BAE29DC0BA20018DA05 /* TransitionManager.swift */,
 				633D09D229DAFBAC00A1A6FA /* MenuViewController.swift */,
 				6398E36B29D8C05200B23077 /* Main.storyboard */,
 				6398E36E29D8C05300B23077 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6398E36A29D8C05200B23077 /* MainViewController.swift in Sources */,
+				639C0BAF29DC0BA20018DA05 /* TransitionManager.swift in Sources */,
 				6398E36629D8C05200B23077 /* AppDelegate.swift in Sources */,
 				6398E36829D8C05200B23077 /* SceneDelegate.swift in Sources */,
 				633D09D329DAFBAC00A1A6FA /* MenuViewController.swift in Sources */,
