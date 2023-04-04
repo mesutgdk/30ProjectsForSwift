@@ -21,49 +21,86 @@ extension TransitionManager:UIViewControllerTransitioningDelegate {
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         //TODO : perform animation
         // get reference to our fromView, toView and the container view that we should perform the transition in
+        // create a tuple of our screens
         let container = transitionContext.containerView
-        let fromView = transitionContext.view(forKey: UITransitionContextViewKey.from)!
-        let toView = transitionContext.view(forKey: UITransitionContextViewKey.to)!
         
-        // set up from 2D transforms that we'll use in the animation
-        let offScreenRight = CGAffineTransformMakeTranslation(container.frame.width, 0)
-        let offScreenLeft = CGAffineTransformMakeTranslation(-container.frame.width, 0)
+        let screens: (from:UIViewController, to:UIViewController) = (transitionContext.viewController(forKey: .from)!, transitionContext.viewController(forKey: .to)!)
         
-        // start the toView to the right of the screen
-        toView.transform = offScreenRight
+        // assign references to our menu view controller and the 'bottom' view controller from the tuple
+        // remember that our menuViewController will alternate between the from and to view controller depending if we're presenting or dismissing
+        
+        let menuViewController = !self.presenting ? screens.from as! MenuViewController : screens.to as! MenuViewController
+        let bottomViewController = !self.presenting ? screens.to as UIViewController : screens.from as UIViewController
+        
+        let menuView: UIView! = menuViewController.view
+        let bottomView: UIView! = bottomViewController.view
+        
+        
+        // prepare the menu
+        if (self.presenting){
+            offStageMenuViewController(menuViewController: menuViewController)
+        }
         
         // add the both views to our view controller
-        container.addSubview(toView)
-        container.addSubview(fromView)
+        container.addSubview(bottomView)
+        container.addSubview(menuView)
         
         // get the duration of the animation
         // DON'T just type '0.5s' -- the reason why won't make sense until the next post
         // but for now it's important to just follow this approach
         let duration = self.transitionDuration(using: transitionContext)
         
-        // perform the animation!
-        // for this example, just slid both fromView and toView to the left at the same time
-        // meaning fromView is pushed off the screen and toView slides into view
-        // we also use the block animation usingSpringWithDamping for a little bounce
         UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, animations: {
-                    
-            fromView.transform = offScreenLeft
-            toView.transform = CGAffineTransformIdentity
-                    
-            }, completion: { finished in
-                        // tell our transitionContext object that we've finished animating
+            // either fade in or fade out
+            if (self.presenting){
+                self.onStageMenuViewController(menuViewController: menuViewController)
+            }else {
+                self.offStageMenuViewController(menuViewController: menuViewController)
+            }
+          
+           
+        } , completion: { finished in
+            // tell our transitionContext object that we've finished animating
             transitionContext.completeTransition(true)
+            UIApplication.shared.keyWindow!.addSubview(screens.to.view)
         })
+    }
+    func offStageMenuViewController(menuViewController: MenuViewController){
+        menuViewController.view.alpha = 0
+        // setup 2D transitions for animations
+        let offstageLeft = CGAffineTransformMakeTranslation(-150, 0)
+        let offstageRight = CGAffineTransformMakeTranslation(150, 0)
+        
+        menuViewController.textButton.transform = offstageLeft
+        menuViewController.photoButton.transform = offstageLeft
+        menuViewController.dendenButton.transform = offstageLeft
+        
+        menuViewController.audioButton.transform = offstageRight
+        menuViewController.chatButton.transform = offstageRight
+        menuViewController.linkButton.transform = offstageRight
+
+    }
+    
+    func onStageMenuViewController(menuViewController: MenuViewController){
+        menuViewController.view.alpha = 1
+        
+        menuViewController.textButton.transform = CGAffineTransformIdentity
+        menuViewController.photoButton.transform = CGAffineTransformIdentity
+        menuViewController.dendenButton.transform = CGAffineTransformIdentity
+        
+        menuViewController.audioButton.transform = CGAffineTransformIdentity
+        menuViewController.chatButton.transform = CGAffineTransformIdentity
+        menuViewController.linkButton.transform = CGAffineTransformIdentity
     }
     
     // return how many seconds the transiton animation will take
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.5
+        return 1
     }
 }
 // MARK: - UIViewControllerTransitioningDelegate protocol methods
 
-extension TransitionManager:  UIViewControllerAnimatedTransitioning{
+extension TransitionManager:  UIViewControllerAnimatedTransitioning {
     // return the animataor when presenting a viewcontroller
     // remember that an animator (or animation controller) is any object that aheres to the UIViewControllerAnimatedTransitioning protocol
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -78,12 +115,4 @@ extension TransitionManager:  UIViewControllerAnimatedTransitioning{
     
 }
 //http://mathewsanders.com/animated-transitions-in-swift/
-
-//The important parts to notice are:
-//
-//iOS passes us an object called transitionContext whenever this method is performed. This object gives us references to views of screens that we’re transitioning from and to and very importantly gives us a third view that acts as a container for the animations to be performed in.
-//We have to manually add our fromView and toView to the container view. The order we add our views determines which will be shown on top if they overlap as part of the animation.
-//We use a regular block animation to perform the animation, but instead of entering the animation duration we call the method self.transitionDuration(transitionContext).
-//When we’ve completed the animation we call the method transitionContext.completeTransition(true).
-//Before we run the project we need to update our ViewController class and create an instance of the our TransitionManager object.
 

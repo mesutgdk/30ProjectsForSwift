@@ -142,7 +142,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gh0-NO-Loy"/>
-                        <color key="backgroundColor" red="0.15629177664945282" green="0.1969940213691313" blue="0.30094233247422686" alpha="0.32740752551020408" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.027100459594868429" green="0.16031570677815296" blue="0.28408907860824739" alpha="0.75868941326530603" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="gh0-NO-Loy" firstAttribute="trailing" secondItem="Ivh-pp-TdJ" secondAttribute="trailing" constant="25" id="1tr-Vb-dCs"/>
                             <constraint firstItem="gh0-NO-Loy" firstAttribute="trailing" secondItem="KV8-Sf-D9x" secondAttribute="trailing" constant="25" id="5tU-zm-dbp"/>
