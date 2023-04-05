@@ -28,6 +28,17 @@ class ViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: UIButton) {
     }
     @IBAction func sendButtonPressed(_ sender: UIButton) {
+        let alert = UIAlertController(title: "DONE!", message: "Successfully tweeted", preferredStyle: .alert)
+        present(alert, animated: true, completion: nil)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+            close()
+        })
+        
+        func close() {
+            alert.dismiss(animated: true)
+            textView.text = ""
+        }
     }
 }
 // MARK: - Move View when Keyboard Appear-Hide
