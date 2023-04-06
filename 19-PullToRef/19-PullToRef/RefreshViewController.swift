@@ -28,8 +28,8 @@ class RefreshViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.refreshControl = UIRefreshControl()
-        tableView.refreshControl?
+        refreshControl = UIRefreshControl()
+        tableView.addSubview(refreshControl!)
         
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,12 +42,7 @@ class RefreshViewController: UITableViewController {
         
         return cell
     }
-    @objc func callOfRefresh (){
-        DispatchQueue.main.async {
-            self.tableView.refreshControl?.endRefreshing()
-            self.tableView.reloadData()
-        }
-    }
+   
 
 
 }
