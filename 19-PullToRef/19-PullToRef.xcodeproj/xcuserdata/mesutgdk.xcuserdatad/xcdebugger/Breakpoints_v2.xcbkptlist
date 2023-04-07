@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9199E844-AA2B-4B6C-B45B-A6DB8F954E4D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CFA2C41-ADEB-4332-AAED-23A506D19B0D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "19-PullToRef/RefreshViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3BBF37C-4E92-4CE5-A7DE-6B9A054D124D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "19-PullToRef/RefreshViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AADFF5FB-D771-4A55-9201-4198AC365F54"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "19-PullToRef/RefreshViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "loadRefreshContents()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AADFF5FB-D771-4A55-9201-4198AC365F54 - 1306cdb4069d579"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9_PullToRef.RefreshViewController.loadRefreshContents() -&gt; ()"
+                  moduleName = "19-PullToRef"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/19-PullToRef/19-PullToRef/RefreshViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "AADFF5FB-D771-4A55-9201-4198AC365F54 - 1306cdb4069d579"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9_PullToRef.RefreshViewController.loadRefreshContents() -&gt; ()"
+                  moduleName = "19-PullToRef"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/19-PullToRef/19-PullToRef/RefreshViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

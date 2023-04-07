@@ -8,6 +8,9 @@
 import Foundation
 
 struct M {
+    
+    static let refreshView = "RefreshView"
+    
     static let reusableCell = "refreshCell"
     
     static let whatIDid: [String] = ["01-SimpleTimer",
