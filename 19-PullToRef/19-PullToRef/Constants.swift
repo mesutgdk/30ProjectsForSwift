@@ -13,6 +13,8 @@ struct M {
     
     static let reusableCell = "refreshCell"
     
+    static let colors = ["Color1","Color2","Color3","Color4","Color5","Color6"]
+    
     static let whatIDid: [String] = ["01-SimpleTimer",
                                      "02-Change Font Ya",
                                      "03-PlayLocalVideo",
