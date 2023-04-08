@@ -20,6 +20,8 @@ class RefreshViewController: UITableViewController{
     
     var currentLabelIndex = 0
     
+    var timer : Timer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshControl = UIRefreshControl()
@@ -40,6 +42,9 @@ class RefreshViewController: UITableViewController{
 
         return cell
     }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 40
+    }
    
     func loadRefreshContents() {
         let refreshContents = Bundle.main.loadNibNamed(M.refreshView, owner: self)
@@ -58,20 +63,22 @@ class RefreshViewController: UITableViewController{
     
     func animateStep1 (){
         isAnimating = true
-        UIView.animate(withDuration: 0.4, delay: 0.0, options: .curveEaseIn) { [self] in
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn) { [self] in
             labelView.subviews[self.currentLabelIndex].transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/3))
+            labelView.subviews[self.currentLabelIndex].backgroundColor = UIColor(named: getNextColor())
 //         renk değiştirme eklenecek
 
         }
         completion: { _ in
             UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveEaseIn) {
                 self.labelView.subviews[self.currentLabelIndex].transform = .identity
+                self.labelView.subviews[self.currentLabelIndex].backgroundColor = .clear
             } completion: { _ in
                 self.currentLabelIndex += 1
                 if self.currentLabelIndex < self.labelView.subviews.count {
                     self.animateStep1()
                 }else {
-                    print("cycle is done")
+//                    print("cycle is done")
                     self.animateStep2()
                 }
             }
@@ -79,7 +86,7 @@ class RefreshViewController: UITableViewController{
         }
     }
     func animateStep2(){
-        UIView.animate(withDuration: 0.6, delay: 0) {
+        UIView.animate(withDuration: 0.3, delay: 0) {
             let scale1 = CGAffineTransform(scaleX: 1.5, y: 1.5)
             let scale2 = CGAffineTransform(scaleX: 1.7, y: 1.7)
             self.labelView.subviews[0].transform = scale2
@@ -98,7 +105,7 @@ class RefreshViewController: UITableViewController{
             
             
         } completion: { _ in
-            UIView.animate(withDuration: 0.3, delay: 0,options: .curveEaseOut) {
+            UIView.animate(withDuration: 0.2, delay: 0,options: .curveEaseOut) {
                 
                 self.labelView.subviews[0].transform = .identity
                 self.labelView.subviews[1].transform = .identity
@@ -114,7 +121,7 @@ class RefreshViewController: UITableViewController{
                 self.labelView.subviews[11].transform = .identity
                 self.labelView.subviews[12].transform = .identity
             } completion: { _ in
-                if !self.isAnimating {
+                if ((self.refreshControl?.isRefreshing) == nil) {
                     self.currentLabelIndex = 0
                     self.animateStep1()
                 }else {
@@ -134,6 +141,23 @@ class RefreshViewController: UITableViewController{
         }
 
     }
+    func getNextColor() -> String {
+        
+        if currentColorIndex == M.colors.count {
+            currentColorIndex = 0
+        }
+        let returnColor = M.colors[currentColorIndex]
+        currentColorIndex += 1
+        return returnColor
+    }
+    func endThisNow (){
+        timer = Timer(timeInterval: 4.0, target: self, selector: Selector(("lastFuncToEnd")), userInfo: nil, repeats: true)
+    }
+    func lastFuncToEnd () {
+        refreshControl?.endRefreshing()
+        timer.invalidate()
+        timer = nil
+    }
 
 }
 extension RefreshViewController {
@@ -141,6 +165,7 @@ extension RefreshViewController {
         if ((refreshControl?.isRefreshing) != nil) {
             if isAnimating == false {
                 animateStep1()
+                endThisNow()
             }
         }
     }
