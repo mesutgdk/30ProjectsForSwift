@@ -114,15 +114,20 @@ class RefreshViewController: UITableViewController{
                 self.labelView.subviews[11].transform = .identity
                 self.labelView.subviews[12].transform = .identity
             } completion: { _ in
-                if ((self.refreshControl?.isRefreshing) != nil) {
-                    self.currentLabelIndex = 0
-                }else {
+//                if ((self.refreshControl?.isRefreshing) != nil) {
+//                    self.currentLabelIndex = 0
+//                }else {
                     self.isAnimating = false
                     self.currentLabelIndex = 0
                     
                     for i in 0..<self.labelView.subviews.count{
-                        self.labelView.subviews[i].backgroundColor = UIColor(named: M.colors[])
-                    }
+                        self.labelView.subviews[i].backgroundColor = UIColor(named: M.colors[i])
+                        DispatchQueue.main.asyncAfter(wallDeadline: .now() + 0.5) {
+                            self.labelView.subviews[i].backgroundColor = .clear
+
+                        }
+//                        self.labelView.subviews[i].backgroundColor = .clear
+//                    }
                     
                 }
             }
