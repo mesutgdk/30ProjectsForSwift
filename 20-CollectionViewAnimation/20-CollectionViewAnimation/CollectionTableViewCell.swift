@@ -9,6 +9,10 @@ import UIKit
 
 class CollectionTableViewCell: UITableViewCell {
 
+    @IBOutlet var cellImage: UIView!
+    @IBOutlet var cellLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
