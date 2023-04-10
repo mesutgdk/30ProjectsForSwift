@@ -37,6 +37,9 @@ class CollectionViewController: UITableViewController {
 
         return cell
     }
+//    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+//        <#code#>
+//    }
     
 
 }
