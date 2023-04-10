@@ -9,7 +9,7 @@ import UIKit
 
 class CollectionTableViewCell: UITableViewCell {
 
-    @IBOutlet var cellImage: UIView!
+    @IBOutlet var cellImage: UIImageView!
     @IBOutlet var cellLabel: UILabel!
     
     

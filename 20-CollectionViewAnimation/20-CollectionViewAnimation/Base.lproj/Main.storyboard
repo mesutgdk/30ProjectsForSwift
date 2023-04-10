@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21701"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,19 +17,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="201" id="RxF-AK-FeG">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="collectionCell" rowHeight="201" id="RxF-AK-FeG" customClass="CollectionTableViewCell" customModule="_0_CollectionViewAnimation" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="201"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RxF-AK-FeG" id="n4d-FU-7mQ">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="201"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ats-nb-CPG">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="148"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ats-nb-CPG">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="160"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="160" id="2cT-oh-3ut"/>
+                                                <constraint firstAttribute="width" constant="393" id="YcR-s6-jP7"/>
+                                            </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCQ-TP-CoN">
+                                            <rect key="frame" x="0.0" y="160" width="393" height="41"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="uCQ-TP-CoN" secondAttribute="bottom" id="4ER-WL-bao"/>
+                                        <constraint firstItem="ats-nb-CPG" firstAttribute="leading" secondItem="n4d-FU-7mQ" secondAttribute="leading" id="Ija-EJ-1bL"/>
+                                        <constraint firstAttribute="trailing" secondItem="uCQ-TP-CoN" secondAttribute="trailing" id="bMi-LL-Vky"/>
+                                        <constraint firstItem="ats-nb-CPG" firstAttribute="top" secondItem="n4d-FU-7mQ" secondAttribute="top" id="e7a-Rw-hJP"/>
+                                        <constraint firstAttribute="trailing" secondItem="ats-nb-CPG" secondAttribute="trailing" id="oUN-L2-Keg"/>
+                                        <constraint firstItem="uCQ-TP-CoN" firstAttribute="top" secondItem="ats-nb-CPG" secondAttribute="bottom" id="t60-sd-xY5"/>
+                                        <constraint firstItem="uCQ-TP-CoN" firstAttribute="leading" secondItem="n4d-FU-7mQ" secondAttribute="leading" id="zPv-HG-bNq"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImage" destination="ats-nb-CPG" id="gxa-Nu-KKv"/>
+                                    <outlet property="cellLabel" destination="uCQ-TP-CoN" id="8NS-Df-JlJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
