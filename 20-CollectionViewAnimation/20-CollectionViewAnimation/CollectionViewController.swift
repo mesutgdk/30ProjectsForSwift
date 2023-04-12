@@ -18,6 +18,7 @@ class CollectionViewController: UICollectionViewController {
         CellBase(image: "Image4", text: "      Happiness cannot be traveled to, owned, earned, worn or consumed. Happiness is the spiritual experience of living every minute with love, grace, and gratitude")
     ]
     @IBOutlet var mCollectview: UICollectionView!
+    var activeCell: CollectionViewCell!
     var cCell : String = "collectionCell"
     
     override func viewDidLoad() {
@@ -36,6 +37,8 @@ class CollectionViewController: UICollectionViewController {
         cell.cellImage.layer.cornerRadius = 2
         cell.exitButton.isHidden = true
         
+//        cell.addTapEventHandler()
+        
         return cell
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -43,52 +46,38 @@ class CollectionViewController: UICollectionViewController {
             return
         }
         let animation = {
+            cell.originalCGRect = cell.frame
             cell.frame = self.view.bounds
+            
         }
         UIView.animate(withDuration: 0.5, animations: animation) { _ in
             self.collectionView.isScrollEnabled = false
+            self.activeCell = cell
 
         }
         cell.exitButton.isHidden = false
-        cell.exitButtonPressed()
+//        cell.exitButtonPressed()
         cell.handleCellSelected()
     }
     func exitCell (){
-//        guard let indexPaths = self.collectionView!.indexPathsForSelectedItems else {
-//            return
-//        }
-//
-//        collectionView.isScrollEnabled = true
-//        collectionView.reloadItems(at: indexPaths)
-        print ("exit button tapped")
+//        self.activeCell.frame = self.activeCell.originalCGRect
+//        collectionView(collectionView, cellForItemAt: IndexPath())
+//        let indexPath = collectionView.indexPathsForSelectedItems ?? [IndexPath(item: collection.count, section: 1)]co
+//        view.translatesAutoresizingMaskIntoConstraints = false
+//        collectionView.frame = self.view.bounds
+        if let indexPaths = self.collectionView.indexPathsForSelectedItems {
+            collectionView!.isScrollEnabled = true
+            collectionView!.reloadItems(at: indexPaths)
+            
+            print ("exit button tapped")
+            
+        }
+            else {
+            print("error findin indexpath,\(NSError()) ")
+        }
+
         
+
     }
-//
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        guard let cell = tableView.cellForRow(at: indexPath) as? CollectionTableViewCell else {
-//            return
-//        }
-//        let animations = {
-//            cell.frame = self.view.bounds
-//        }
-//        UIView.animate(withDuration: 0.5, animations: animations)
-//
-////        cell.exitButton.isHidden = false
-//        cell.exitButtonPressed()
-//        cell.handleCellSelected()
-//        tableView.isScrollEnabled = false
-//    }
-//     func exitCell () {
-//        print ("exit button tapped")
-////        view.bounds = tableView.frame
-////        guard let indexPaths = self.tableView.indexPathsForSelectedRows else {
-////        return
-////    }
-//         guard let indexPaths = self.tableView.indexPathsForSelectedRows else { return  }
-//
-//    tableView.isScrollEnabled = true
-//    tableView.reloadRows(at: indexPaths, with: .none)
-//
-//    }
 }
 

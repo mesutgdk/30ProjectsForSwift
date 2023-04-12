@@ -16,22 +16,32 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet var cellText: UITextView!
     @IBOutlet var exitButton: UIButton!
     
+    var originalCGRect: CGRect!
     
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    
+    var backButtonTapped: (() -> Void)?
     
     func handleCellSelected() {
         exitButton.isHidden = false
-        self.superview?.bringSubviewToFront(self)
+        self.superview!.bringSubviewToFront(self)
     }
     
     @IBAction func exitButtonPressed()  {
         collectionTVC.exitCell()
     }
+    
+//    func addTapEventHandler() {
+//        exitButton.addTarget(self, action: #selector(backButtonDidTouch(_:)), for: .touchUpInside)
+//    }
+//
+//    @objc func backButtonDidTouch(_ sender: UIGestureRecognizer) {
+//        backButtonTapped?()
+//    }
     
    
     
