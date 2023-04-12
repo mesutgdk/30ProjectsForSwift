@@ -3,4 +3,69 @@
    uuid = "50368A20-4123-45DB-90B0-955CB34853AE"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18FB88EC-C294-4196-95FC-882B31405C1F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "20-CollectionViewAnimation/CollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "CollectionViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "18FB88EC-C294-4196-95FC-882B31405C1F - c4bc37d25cc0f1db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_0_CollectionViewAnimation.CollectionViewCell.collectionTVC.getter : _0_CollectionViewAnimation.CollectionViewController"
+                  moduleName = "20-CollectionViewAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/20-CollectionViewAnimation/20-CollectionViewAnimation/CollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "18FB88EC-C294-4196-95FC-882B31405C1F - a40c408d83809180"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_0_CollectionViewAnimation.CollectionViewCell.init(frame: __C.CGRect) -&gt; _0_CollectionViewAnimation.CollectionViewCell"
+                  moduleName = "20-CollectionViewAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/20-CollectionViewAnimation/20-CollectionViewAnimation/CollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "18FB88EC-C294-4196-95FC-882B31405C1F - 479f6e1008155ffe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_0_CollectionViewAnimation.CollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;_0_CollectionViewAnimation.CollectionViewCell&gt;"
+                  moduleName = "20-CollectionViewAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/20-CollectionViewAnimation/20-CollectionViewAnimation/CollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

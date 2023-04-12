@@ -9,5 +9,5 @@ import Foundation
 
 struct CellBase {
     var image : String
-    var label : String
+    var text : String
 }
