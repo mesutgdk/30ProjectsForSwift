@@ -15,6 +15,8 @@
 		63089F2B29E2FF9C00C78A60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63089F2929E2FF9C00C78A60 /* LaunchScreen.storyboard */; };
 		63089F3429E2FFD400C78A60 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63089F3229E2FFD400C78A60 /* CollectionViewCell.swift */; };
 		63089F3729E3062F00C78A60 /* CellBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63089F3629E3062F00C78A60 /* CellBase.swift */; };
+		63D8637F29E91C43001146A7 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D8637D29E91C43001146A7 /* NewCollectionViewCell.swift */; };
+		63D8638029E91C43001146A7 /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63D8637E29E91C43001146A7 /* NewCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		63089F2C29E2FF9C00C78A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63089F3229E2FFD400C78A60 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		63089F3629E3062F00C78A60 /* CellBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBase.swift; sourceTree = "<group>"; };
+		63D8637D29E91C43001146A7 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
+		63D8637E29E91C43001146A7 /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +67,11 @@
 				63089F1E29E2FF9B00C78A60 /* AppDelegate.swift */,
 				63089F2029E2FF9B00C78A60 /* SceneDelegate.swift */,
 				63089F3629E3062F00C78A60 /* CellBase.swift */,
-				63089F2229E2FF9B00C78A60 /* CollectionViewController.swift */,
-				63089F2429E2FF9B00C78A60 /* Main.storyboard */,
 				63089F3229E2FFD400C78A60 /* CollectionViewCell.swift */,
+				63089F2229E2FF9B00C78A60 /* CollectionViewController.swift */,
+				63D8637D29E91C43001146A7 /* NewCollectionViewCell.swift */,
+				63D8637E29E91C43001146A7 /* NewCollectionViewCell.xib */,
+				63089F2429E2FF9B00C78A60 /* Main.storyboard */,
 				63089F2729E2FF9C00C78A60 /* Assets.xcassets */,
 				63089F2929E2FF9C00C78A60 /* LaunchScreen.storyboard */,
 				63089F2C29E2FF9C00C78A60 /* Info.plist */,
@@ -134,6 +140,7 @@
 				63089F2B29E2FF9C00C78A60 /* LaunchScreen.storyboard in Resources */,
 				63089F2829E2FF9C00C78A60 /* Assets.xcassets in Resources */,
 				63089F2629E2FF9B00C78A60 /* Main.storyboard in Resources */,
+				63D8638029E91C43001146A7 /* NewCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +154,7 @@
 				63089F2329E2FF9B00C78A60 /* CollectionViewController.swift in Sources */,
 				63089F1F29E2FF9B00C78A60 /* AppDelegate.swift in Sources */,
 				63089F2129E2FF9B00C78A60 /* SceneDelegate.swift in Sources */,
+				63D8637F29E91C43001146A7 /* NewCollectionViewCell.swift in Sources */,
 				63089F3429E2FFD400C78A60 /* CollectionViewCell.swift in Sources */,
 				63089F3729E3062F00C78A60 /* CellBase.swift in Sources */,
 			);

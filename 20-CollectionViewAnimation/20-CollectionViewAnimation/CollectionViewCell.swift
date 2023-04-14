@@ -30,10 +30,10 @@ class CollectionViewCell: UICollectionViewCell {
         exitButton.isHidden = false
         self.superview!.bringSubviewToFront(self)
     }
-    
+//    
     @IBAction func exitButtonPressed()  {
         collectionTVC.exitCell()
-    }
+    
     
 //    func addTapEventHandler() {
 //        exitButton.addTarget(self, action: #selector(backButtonDidTouch(_:)), for: .touchUpInside)
@@ -41,7 +41,7 @@ class CollectionViewCell: UICollectionViewCell {
 //
 //    @objc func backButtonDidTouch(_ sender: UIGestureRecognizer) {
 //        backButtonTapped?()
-//    }
+    }
     
    
     

@@ -17,64 +17,87 @@ class CollectionViewController: UICollectionViewController {
         
         CellBase(image: "Image4", text: "      Happiness cannot be traveled to, owned, earned, worn or consumed. Happiness is the spiritual experience of living every minute with love, grace, and gratitude")
     ]
+   
+    
     @IBOutlet var mCollectview: UICollectionView!
-    var activeCell: CollectionViewCell!
+//    var activeCell: CollectionViewCell!
     var cCell : String = "collectionCell"
+    
+    private struct GreatNib {
+        static var NibName = "NewCollectionViewCell"
+        static var NibCell = "newCell"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        collectionView.separatorStyle = .none
+      mCollectview.register(UINib(nibName: GreatNib.NibName, bundle: nil), forCellWithReuseIdentifier: GreatNib.NibCell)
+//        let layout = UICollectionViewFlowLayout()
+//        let collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+//
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.reloadData()
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return collection.count
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cCell, for: indexPath) as! CollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GreatNib.NibCell, for: indexPath) as? NewCollectionViewCell else {
+            return UICollectionViewCell()
+        }
         cell.backgroundColor = .clear
         cell.cellImage.image = UIImage(named: collection[indexPath.row].image)
-        cell.cellText.text = collection[indexPath.row].text
-        cell.cellText.layer.cornerRadius = 5
+        cell.cellTextView.text = collection[indexPath.row].text
+        cell.cellTextView.layer.cornerRadius = 5
         cell.cellImage.layer.cornerRadius = 2
         cell.exitButton.isHidden = true
         
-//        cell.addTapEventHandler()
         
         return cell
     }
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell else {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? NewCollectionViewCell else {
             return
         }
         let animation = {
-            cell.originalCGRect = cell.frame
+//            cell.originalCGRect = cell.frame
             cell.frame = self.view.bounds
             
         }
-        UIView.animate(withDuration: 0.5, animations: animation) { _ in
+        UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, animations: animation) { _ in
             self.collectionView.isScrollEnabled = false
-            self.activeCell = cell
-
+//            self.activeCell = cell
+            cell.exitButton.isHidden = false
+            cell.handleCellSelected()
         }
-        cell.exitButton.isHidden = false
-//        cell.exitButtonPressed()
-        cell.handleCellSelected()
+        
     }
+    
     func exitCell (){
+        collectionView.reloadData()
+        guard let indexPaths = self.collectionView.indexPathsForSelectedItems else {
+            return
+        }
+        collectionView!.isScrollEnabled = true
+        collectionView!.reloadItems(at: indexPaths)
+        
+        print ("exit button tapped")
 //        self.activeCell.frame = self.activeCell.originalCGRect
 //        collectionView(collectionView, cellForItemAt: IndexPath())
-//        let indexPath = collectionView.indexPathsForSelectedItems ?? [IndexPath(item: collection.count, section: 1)]co
+//        let indexPath = collectionView.indexPathsForSelectedItems ?? [IndexPath(item: collection.count, section:1)]co
 //        view.translatesAutoresizingMaskIntoConstraints = false
 //        collectionView.frame = self.view.bounds
-        if let indexPaths = self.collectionView.indexPathsForSelectedItems {
-            collectionView!.isScrollEnabled = true
-            collectionView!.reloadItems(at: indexPaths)
-            
-            print ("exit button tapped")
-            
-        }
-            else {
-            print("error findin indexpath,\(NSError()) ")
-        }
+//        if let indexPaths = self.collectionView.indexPathsForSelectedItems {
+//            collectionView!.isScrollEnabled = true
+//            collectionView!.reloadItems(at: indexPaths)
+//
+//            print ("exit button tapped")
+//            view.translatesAutoresizingMaskIntoConstraints = false
+//        }
+//            else {
+//        }
 
         
 
