@@ -42,7 +42,26 @@ class ViewController: UITableViewController {
         cell.cellLabel.text = cellData[indexPath.row].label
         return cell
     }
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let download = UITableViewRowAction(style: .normal, title: "⬇\nDownload") { action, index in
+            print("This item is downloaded")
+        }
+        download.backgroundColor = UIColor.blue
+        let share = UITableViewRowAction(style: .normal, title: "👩‍👩‍👧‍👧\nShare") { action, index in
+            let firstActivityItem = self.cellData[indexPath.row]
+            let activityViewController = UIActivityViewController(activityItems: [firstActivityItem.image as NSString], applicationActivities: nil)
+        }
+        share.backgroundColor = UIColor.systemCyan
+        let delete = UITableViewRowAction(style: .normal, title: "🗑️\nDelete") { action, indexPath in
+            print("Delete Button Tapped")
+        }
+        delete.backgroundColor = UIColor.systemRed
+        
+        return [delete,share,download]
+    }
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
     
-
 }
 
