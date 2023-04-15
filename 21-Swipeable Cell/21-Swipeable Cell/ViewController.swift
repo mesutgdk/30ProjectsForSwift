@@ -44,16 +44,21 @@ class ViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let download = UITableViewRowAction(style: .normal, title: "⬇\nDownload") { action, index in
-            print("This item is downloaded")
+            print("Download button pressed")
         }
         download.backgroundColor = UIColor.blue
+        
+        // aksiyon oluşturmak için kullanılan path
+        
         let share = UITableViewRowAction(style: .normal, title: "👩‍👩‍👧‍👧\nShare") { action, index in
             let firstActivityItem = self.cellData[indexPath.row]
             let activityViewController = UIActivityViewController(activityItems: [firstActivityItem.image as NSString], applicationActivities: nil)
+            self.present(activityViewController, animated: true)
+            print("Share button pressed")
         }
         share.backgroundColor = UIColor.systemCyan
         let delete = UITableViewRowAction(style: .normal, title: "🗑️\nDelete") { action, indexPath in
-            print("Delete Button Tapped")
+            print("Delete button pressed")
         }
         delete.backgroundColor = UIColor.systemRed
         
@@ -62,6 +67,7 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+    
     
 }
 
