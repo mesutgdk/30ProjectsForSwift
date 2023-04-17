@@ -5,22 +5,28 @@
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>wifi</string>
 			<key>UIApplicationShortcutItemType</key>
 			<string></string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string></string>
+			<string>Wifi</string>
 		</dict>
 		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>qr</string>
 			<key>UIApplicationShortcutItemType</key>
 			<string></string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string></string>
+			<string>QR</string>
 		</dict>
 		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>fast</string>
 			<key>UIApplicationShortcutItemType</key>
 			<string>UIApplicationShortcutItemType</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string></string>
+			<string>Run</string>
 		</dict>
 	</array>
 	<key>UIApplicationSceneManifest</key>

@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		63C14B6F29EAE43F00E84B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C14B6E29EAE43F00E84B99 /* AppDelegate.swift */; };
 		63C14B7129EAE43F00E84B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C14B7029EAE43F00E84B99 /* SceneDelegate.swift */; };
-		63C14B7329EAE43F00E84B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C14B7229EAE43F00E84B99 /* ViewController.swift */; };
+		63C14B7329EAE43F00E84B99 /* WifiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C14B7229EAE43F00E84B99 /* WifiViewController.swift */; };
 		63C14B7629EAE43F00E84B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C14B7429EAE43F00E84B99 /* Main.storyboard */; };
 		63C14B7829EAE43F00E84B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C14B7729EAE43F00E84B99 /* Assets.xcassets */; };
 		63C14B7B29EAE43F00E84B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C14B7929EAE43F00E84B99 /* LaunchScreen.storyboard */; };
+		63C8864A29ED41AE00BD1572 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C8864929ED41AE00BD1572 /* RunViewController.swift */; };
+		63C8864C29ED41D800BD1572 /* QrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C8864B29ED41D800BD1572 /* QrViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63C14B6B29EAE43F00E84B99 /* 22-3D Touch Quick Action.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "22-3D Touch Quick Action.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C14B6E29EAE43F00E84B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C14B7029EAE43F00E84B99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63C14B7229EAE43F00E84B99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63C14B7229EAE43F00E84B99 /* WifiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiViewController.swift; sourceTree = "<group>"; };
 		63C14B7529EAE43F00E84B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63C14B7729EAE43F00E84B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C14B7A29EAE43F00E84B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C14B7C29EAE43F00E84B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C8864929ED41AE00BD1572 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		63C8864B29ED41D800BD1572 /* QrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				63C14B6E29EAE43F00E84B99 /* AppDelegate.swift */,
 				63C14B7029EAE43F00E84B99 /* SceneDelegate.swift */,
-				63C14B7229EAE43F00E84B99 /* ViewController.swift */,
+				63C8864929ED41AE00BD1572 /* RunViewController.swift */,
+				63C8864B29ED41D800BD1572 /* QrViewController.swift */,
+				63C14B7229EAE43F00E84B99 /* WifiViewController.swift */,
 				63C14B7429EAE43F00E84B99 /* Main.storyboard */,
 				63C14B7729EAE43F00E84B99 /* Assets.xcassets */,
 				63C14B7929EAE43F00E84B99 /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C14B7329EAE43F00E84B99 /* ViewController.swift in Sources */,
+				63C14B7329EAE43F00E84B99 /* WifiViewController.swift in Sources */,
+				63C8864C29ED41D800BD1572 /* QrViewController.swift in Sources */,
 				63C14B6F29EAE43F00E84B99 /* AppDelegate.swift in Sources */,
+				63C8864A29ED41AE00BD1572 /* RunViewController.swift in Sources */,
 				63C14B7129EAE43F00E84B99 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
