@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "327CE8D6-0453-477F-90EF-D7707695FEBA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD4B2985-0455-46D0-80D6-DE5C8757877A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "22-3D Touch Quick Action/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "application(_:performActionFor:completionHandler:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "AD4B2985-0455-46D0-80D6-DE5C8757877A - fc04f8696a65198f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_2_3D_Touch_Quick_Action.AppDelegate.application(_: __C.UIApplication, performActionFor: __C.UIApplicationShortcutItem, completionHandler: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "22-3D Touch Quick Action"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/22-3D%20Touch%20Quick%20Action/22-3D%20Touch%20Quick%20Action/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "AD4B2985-0455-46D0-80D6-DE5C8757877A - fc04f8696a651887"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_2_3D_Touch_Quick_Action.AppDelegate.application(_: __C.UIApplication, performActionFor: __C.UIApplicationShortcutItem, completionHandler: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "22-3D Touch Quick Action"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/22-3D%20Touch%20Quick%20Action/22-3D%20Touch%20Quick%20Action/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "AD4B2985-0455-46D0-80D6-DE5C8757877A - fc04f8696a651daf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_2_3D_Touch_Quick_Action.AppDelegate.application(_: __C.UIApplication, performActionFor: __C.UIApplicationShortcutItem, completionHandler: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "22-3D Touch Quick Action"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/22-3D%20Touch%20Quick%20Action/22-3D%20Touch%20Quick%20Action/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "AD4B2985-0455-46D0-80D6-DE5C8757877A - fc04f8696a651ded"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_2_3D_Touch_Quick_Action.AppDelegate.application(_: __C.UIApplication, performActionFor: __C.UIApplicationShortcutItem, completionHandler: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "22-3D Touch Quick Action"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/22-3D%20Touch%20Quick%20Action/22-3D%20Touch%20Quick%20Action/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

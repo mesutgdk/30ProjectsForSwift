@@ -2,22 +2,28 @@
 //  ViewController.swift
 //  22-3D Touch Quick Action
 //
-//  Created by Mesut Gedik on 15.04.2023.
+//  Created by Mesut Gedik on 17.04.2023.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-//    battary clock is light now **
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
+    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

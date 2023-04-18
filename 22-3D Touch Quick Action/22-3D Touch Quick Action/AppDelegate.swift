@@ -10,27 +10,35 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let shortcutitem =
+            launchOptions?[UIApplication.LaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            if shortcutitem.type == "foranewlife.3D-Touch-Quick-Action.Run" {
+                let vc1 = storyBoard.instantiateViewController(identifier: "RunVC") as! RunViewController
+                self.window?.rootViewController = vc1
+            } else if shortcutitem.type == "foranewlife.3D-Touch-Quick-Action.Qr" {
+                let vc2 = storyBoard.instantiateViewController(identifier: "QrVC") as! QrViewController
+                self.window?.rootViewController = vc2
+            } else if shortcutitem.type == "foranewlife.3D-Touch-Quick-Action.Wifi" {
+                let vc3 = storyBoard.instantiateViewController(withIdentifier: "WifiVC") as! WifiViewController
+                self.window?.rootViewController = vc3
+            }
+            else { let vc4 = UIViewController()
+                self.window?.rootViewController = vc4
+            }
+        }
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
 
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
-
+    
 }
 
