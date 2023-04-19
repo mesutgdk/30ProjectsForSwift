@@ -6,14 +6,20 @@
 //
 
 import UIKit
+import SideMenu
 
 class ViewController: UIViewController {
 
+    private let sideMenu = SideMenuNavigationController(rootViewController: UIViewController())
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        sideMenu.leftSide = true
+        SideMenuManager.default.leftMenuNavigationController = sideMenu
+        SideMenuManager.default.addPanGestureToPresent(toView: view)
     }
-
+    @IBAction func didPressedMenuButton() {
+     present(sideMenu, animated: true)
+    }
 
 }
 
