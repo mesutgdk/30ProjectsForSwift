@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  23-Side Menu
 //
-//  Created by Mesut Gedik on 18.04.2023.
+//  Created by Mesut Gedik on 19.04.2023.
 //
 
 import UIKit
