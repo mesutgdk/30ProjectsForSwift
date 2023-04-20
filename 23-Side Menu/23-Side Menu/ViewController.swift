@@ -13,8 +13,8 @@ class ViewController: UIViewController, MenuTableViewDelegate {
    
 //    private let sideMenu = SideMenuNavigationController(rootViewController: MenuTableViewController())
     private var sideMenu: SideMenuNavigationController?
-    private let BabyVC = BabyViewController()
-    private let ManVC = ManViewController()
+    private let ProfileVC = ProfileViewController()
+    private let ConnectionVC = ConnectionViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,20 +29,20 @@ class ViewController: UIViewController, MenuTableViewDelegate {
         addChildcontrollers()
     }
     func addChildcontrollers(){
-        addChild(BabyVC)
-        addChild(ManVC)
+        addChild(ProfileVC)
+        addChild(ConnectionVC)
         
-        view.addSubview(BabyVC.view)
-        view.addSubview(ManVC.view)
+        view.addSubview(ProfileVC.view)
+        view.addSubview(ConnectionVC.view)
         
-        BabyVC.view.frame = view.bounds
-        ManVC.view.frame = view.bounds
+        ProfileVC.view.frame = view.bounds
+        ConnectionVC.view.frame = view.bounds
     
-        BabyVC.didMove(toParent: self)
-        ManVC.didMove(toParent: self)
+        ProfileVC.didMove(toParent: self)
+        ConnectionVC.didMove(toParent: self)
         
-        BabyVC.view.isHidden = true
-        ManVC.view.isHidden = true
+        ProfileVC.view.isHidden = true
+        ConnectionVC.view.isHidden = true
     }
     @IBAction func menuButtonPressed (){
         present(sideMenu!, animated: true)
@@ -50,17 +50,20 @@ class ViewController: UIViewController, MenuTableViewDelegate {
     }
     func didSelectMenuItem(name: String) {
         sideMenu?.dismiss(animated: true,completion: { [weak self] in
-            if name == "KADIN" {
-                self?.BabyVC.view.isHidden = true
-                self?.ManVC.view.isHidden = true
+            
+            self?.title = name
+            
+            if name == "HOME" {
+                self?.ProfileVC.view.isHidden = true
+                self?.ConnectionVC.view.isHidden = true
                 
-            } else if name == "ERKEK"{
-                self?.BabyVC.view.isHidden = false
-                self?.ManVC.view.isHidden = true
+            } else if name == "PROFILES"{
+                self?.ProfileVC.view.isHidden = false
+                self?.ConnectionVC.view.isHidden = true
                 
-            }else if name == "ÇOCUK" {
-                self?.BabyVC.view.isHidden = true
-                self?.ManVC.view.isHidden = false
+            }else if name == "CONNECTIONS" {
+                self?.ProfileVC.view.isHidden = true
+                self?.ConnectionVC.view.isHidden = false
                 
             }
         })
