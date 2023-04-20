@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4170CEFE9D7C2A2AE2C6393D /* Pods_23_Side_Menu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236A06E1F03BBC42B37E3155 /* Pods_23_Side_Menu.framework */; };
+		6363A8F429F01A70005C8566 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363A8F329F01A70005C8566 /* MenuTableViewController.swift */; };
 		63A6810E29F0172700724AD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6810D29F0172700724AD7 /* AppDelegate.swift */; };
 		63A6811029F0172700724AD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6810F29F0172700724AD7 /* SceneDelegate.swift */; };
 		63A6811229F0172700724AD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6811129F0172700724AD7 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		03A15A96892C74BABDA48B55 /* Pods-23-Side Menu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-23-Side Menu.debug.xcconfig"; path = "Target Support Files/Pods-23-Side Menu/Pods-23-Side Menu.debug.xcconfig"; sourceTree = "<group>"; };
 		236A06E1F03BBC42B37E3155 /* Pods_23_Side_Menu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_23_Side_Menu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6363A8F329F01A70005C8566 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		63A6810A29F0172700724AD7 /* 23-Side Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "23-Side Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A6810D29F0172700724AD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A6810F29F0172700724AD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 				03A15A96892C74BABDA48B55 /* Pods-23-Side Menu.debug.xcconfig */,
 				94DF16CE197580620BB7D96E /* Pods-23-Side Menu.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,6 +77,7 @@
 				63A6810D29F0172700724AD7 /* AppDelegate.swift */,
 				63A6810F29F0172700724AD7 /* SceneDelegate.swift */,
 				63A6811129F0172700724AD7 /* ViewController.swift */,
+				6363A8F329F01A70005C8566 /* MenuTableViewController.swift */,
 				63A6811329F0172700724AD7 /* Main.storyboard */,
 				63A6811629F0172900724AD7 /* Assets.xcassets */,
 				63A6811829F0172900724AD7 /* LaunchScreen.storyboard */,
@@ -207,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6363A8F429F01A70005C8566 /* MenuTableViewController.swift in Sources */,
 				63A6811229F0172700724AD7 /* ViewController.swift in Sources */,
 				63A6810E29F0172700724AD7 /* AppDelegate.swift in Sources */,
 				63A6811029F0172700724AD7 /* SceneDelegate.swift in Sources */,
