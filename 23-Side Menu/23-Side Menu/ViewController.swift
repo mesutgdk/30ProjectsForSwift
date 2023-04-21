@@ -13,8 +13,8 @@ class ViewController: UIViewController, MenuTableViewDelegate {
    
 //    private let sideMenu = SideMenuNavigationController(rootViewController: MenuTableViewController())
     private var sideMenu: SideMenuNavigationController?
-    private let ProfileVC = ProfileViewController()
-    private let ConnectionVC = ConnectionViewController()
+    private let MordorVC = MordorViewController()
+    private let MinasTirithVC = MTViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,20 +29,20 @@ class ViewController: UIViewController, MenuTableViewDelegate {
         addChildcontrollers()
     }
     func addChildcontrollers(){
-        addChild(ProfileVC)
-        addChild(ConnectionVC)
+        addChild(MordorVC)
+        addChild(MinasTirithVC)
         
-        view.addSubview(ProfileVC.view)
-        view.addSubview(ConnectionVC.view)
+        view.addSubview(MordorVC.view)
+        view.addSubview(MinasTirithVC.view)
         
-        ProfileVC.view.frame = view.bounds
-        ConnectionVC.view.frame = view.bounds
+        MordorVC.view.frame = view.bounds
+        MinasTirithVC.view.frame = view.bounds
     
-        ProfileVC.didMove(toParent: self)
-        ConnectionVC.didMove(toParent: self)
+        MordorVC.didMove(toParent: self)
+        MinasTirithVC.didMove(toParent: self)
         
-        ProfileVC.view.isHidden = true
-        ConnectionVC.view.isHidden = true
+        MordorVC.view.isHidden = true
+        MinasTirithVC.view.isHidden = true
     }
     @IBAction func menuButtonPressed (){
         present(sideMenu!, animated: true)
@@ -54,16 +54,17 @@ class ViewController: UIViewController, MenuTableViewDelegate {
             self?.title = name
             
             if name == "HOME" {
-                self?.ProfileVC.view.isHidden = true
-                self?.ConnectionVC.view.isHidden = true
+                self?.MordorVC.view.isHidden = true
+                self?.MinasTirithVC.view.isHidden = true
                 
-            } else if name == "PROFILES"{
-                self?.ProfileVC.view.isHidden = false
-                self?.ConnectionVC.view.isHidden = true
+            } else if name == "MORDOR"{
+                self?.MordorVC.view.isHidden = false
+                self?.MinasTirithVC.view.isHidden = true
+//                self?.MordorVC.image.isHidden = false
                 
-            }else if name == "CONNECTIONS" {
-                self?.ProfileVC.view.isHidden = true
-                self?.ConnectionVC.view.isHidden = false
+            }else if name == "MINAS TIRITH" {
+                self?.MordorVC.view.isHidden = true
+                self?.MinasTirithVC.view.isHidden = false
                 
             }
         })

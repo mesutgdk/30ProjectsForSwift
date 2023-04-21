@@ -16,7 +16,7 @@ class MenuTableViewController: UITableViewController {
     var delegate: MenuTableViewDelegate?
     
     private let menuItems: [String] = [
-    "HOME","PROFILES","CONNECTIONS"]
+    "HOME","MORDOR","MINAS TIRITH"]
     
     private let mcell = "menuCell"
     
