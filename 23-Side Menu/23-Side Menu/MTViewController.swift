@@ -11,7 +11,7 @@ class MTViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var imageView = UIImageView ()
+        let imageView = UIImageView ()
         imageView.frame = view.bounds
         imageView.image = UIImage(named: "minasTirith")
         view.addSubview(imageView)

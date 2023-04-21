@@ -31,7 +31,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="ZEq-sm-sVj">
-                        <barButtonItem key="leftBarButtonItem" image="line.3.horizontal" catalog="system" id="NVY-ZT-h0g">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.3.horizontal" catalog="system" id="NVY-ZT-h0g">
+                            <color key="tintColor" red="0.98870932980000004" green="0.98987043509999995" blue="1" alpha="0.89093543050000001" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="menuButtonPressed" destination="BYZ-38-t0r" id="DyJ-3P-vgd"/>
                             </connections>

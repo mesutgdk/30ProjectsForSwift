@@ -14,7 +14,7 @@ class MordorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        view.backgroundColor = .red
-        var imageView = UIImageView ()
+        let imageView = UIImageView ()
         imageView.frame = view.bounds
         imageView.image = UIImage(named: "mordor")
         view.addSubview(imageView)
