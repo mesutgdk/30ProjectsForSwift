@@ -11,8 +11,11 @@ class MTViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .cyan
+        var imageView = UIImageView ()
+        imageView.frame = view.bounds
+        imageView.image = UIImage(named: "minasTirith")
+        view.addSubview(imageView)
+//        view.backgroundColor = .cyan
         
     }
     

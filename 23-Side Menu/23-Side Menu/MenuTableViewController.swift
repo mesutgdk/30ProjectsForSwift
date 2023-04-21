@@ -22,6 +22,7 @@ class MenuTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: mcell)
         tableView.backgroundColor = UIColor(red: 33/255, green: 33/255, blue: 33/255, alpha: 1)
         view.backgroundColor = .darkGray

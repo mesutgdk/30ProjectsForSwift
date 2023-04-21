@@ -16,8 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shire" translatesAutoresizingMaskIntoConstraints="NO" id="yWP-Tq-LLI">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yWP-Tq-LLI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1ki-U1-m8n"/>
+                            <constraint firstItem="yWP-Tq-LLI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PzW-X3-f8a"/>
+                            <constraint firstAttribute="bottom" secondItem="yWP-Tq-LLI" secondAttribute="bottom" id="kGu-wX-hJm"/>
+                            <constraint firstItem="yWP-Tq-LLI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qBh-vl-ckz"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="ZEq-sm-sVj">
                         <barButtonItem key="leftBarButtonItem" image="line.3.horizontal" catalog="system" id="NVY-ZT-h0g">
@@ -39,6 +50,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A55-Hi-WzD">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.98870932980000004" green="0.98987043509999995" blue="1" alpha="0.89093543050000001" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -52,6 +66,7 @@
     </scenes>
     <resources>
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="shire" width="425" height="920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
