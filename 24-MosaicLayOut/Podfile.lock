@@ -1,0 +1,16 @@
+PODS:
+  - TRMosaicLayout (1.0.0)
+
+DEPENDENCIES:
+  - TRMosaicLayout
+
+SPEC REPOS:
+  trunk:
+    - TRMosaicLayout
+
+SPEC CHECKSUMS:
+  TRMosaicLayout: 1875505c48dd2877afd69a8bea7b4c1c63afa5b5
+
+PODFILE CHECKSUM: eb96d841c50a459aff835d7b7dc59856d39b12d8
+
+COCOAPODS: 1.12.1
