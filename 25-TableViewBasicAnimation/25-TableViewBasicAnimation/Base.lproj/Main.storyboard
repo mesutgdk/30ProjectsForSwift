@@ -4,11 +4,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Animation Table View Controller-->
+        <!--Animation Menu-->
         <scene sceneID="Tvd-bM-LHH">
             <objects>
                 <tableViewController id="dtA-Oi-Oli" customClass="AnimationTableViewController" customModule="_5_TableViewBasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,11 +32,50 @@
                             <outlet property="delegate" destination="dtA-Oi-Oli" id="mAq-Xu-n6y"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="CeX-kZ-r4y"/>
+                    <navigationItem key="navigationItem" title="Animation Menu" id="CeX-kZ-r4y"/>
+                    <connections>
+                        <segue destination="tWj-JC-mPw" kind="show" identifier="Scale" id="HZB-Em-3bd"/>
+                        <segue destination="ATh-3r-W7k" kind="show" identifier="Rotation" id="SvI-R4-U9i"/>
+                        <segue destination="NKl-ee-PZk" kind="show" identifier="Position" id="yE8-Nm-h5w"/>
+                        <segue destination="gpT-FM-wJO" kind="show" identifier="Opacity" id="Ir6-Ts-cTe"/>
+                        <segue destination="E0d-Md-cXo" kind="show" identifier="Color" id="eEv-4y-OrY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkT-x3-oMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1144.2748091603053" y="-78.16901408450704"/>
+        </scene>
+        <!--Scale View Controller-->
+        <scene sceneID="zxj-lA-Qek">
+            <objects>
+                <viewController id="tWj-JC-mPw" customClass="ScaleViewController" customModule="_5_TableViewBasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vYM-7Z-i5m">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="z34-mk-kc1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ufS-tQ-U1S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUH-kr-vD3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2230" y="-1508"/>
+        </scene>
+        <!--Rotation View Controller-->
+        <scene sceneID="pcD-Nf-ggh">
+            <objects>
+                <viewController id="ATh-3r-W7k" customClass="RotationViewController" customModule="_5_TableViewBasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="42v-Ah-Wjo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Yqe-Ft-1LP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bTo-1l-VTG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ruy-U0-RtY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2230" y="-830"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="18f-ci-FDi">
@@ -54,6 +94,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4L2-Oi-Lkg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="217.55725190839695" y="-78.16901408450704"/>
+        </scene>
+        <!--Position View Controller-->
+        <scene sceneID="tUz-0w-BSt">
+            <objects>
+                <viewController id="NKl-ee-PZk" customClass="PositionViewController" customModule="_5_TableViewBasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hze-9n-Jhe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7sc-KR-wxl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qMf-Zy-REJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oca-Z9-5my" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2263" y="-78"/>
+        </scene>
+        <!--Opacity View Controller-->
+        <scene sceneID="bSY-w1-Jub">
+            <objects>
+                <viewController id="gpT-FM-wJO" customClass="OpacityViewController" customModule="_5_TableViewBasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WzO-nq-XSN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="n9b-aG-8S4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lhP-tW-i64"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2q-bF-8O3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2262" y="614"/>
+        </scene>
+        <!--Color View Controller-->
+        <scene sceneID="lMd-tK-p8P">
+            <objects>
+                <viewController id="E0d-Md-cXo" customClass="ColorViewController" customModule="_5_TableViewBasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SAc-oo-eQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dSR-cC-pdV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qhd-Yc-lCb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZJ-j8-ZxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1326" y="782"/>
         </scene>
     </scenes>
     <resources>

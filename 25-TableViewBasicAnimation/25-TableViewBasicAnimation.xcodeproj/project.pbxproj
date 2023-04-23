@@ -13,6 +13,11 @@
 		63A76C5429F5B76500E8CAB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A76C5229F5B76500E8CAB3 /* Main.storyboard */; };
 		63A76C5629F5B76600E8CAB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A76C5529F5B76600E8CAB3 /* Assets.xcassets */; };
 		63A76C5929F5B76600E8CAB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A76C5729F5B76600E8CAB3 /* LaunchScreen.storyboard */; };
+		63A76C6129F5CCAE00E8CAB3 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A76C6029F5CCAE00E8CAB3 /* ScaleViewController.swift */; };
+		63A76C6329F5CCBF00E8CAB3 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A76C6229F5CCBF00E8CAB3 /* RotationViewController.swift */; };
+		63A76C6529F5CCDE00E8CAB3 /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A76C6429F5CCDE00E8CAB3 /* PositionViewController.swift */; };
+		63A76C6729F5CCEF00E8CAB3 /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A76C6629F5CCEF00E8CAB3 /* OpacityViewController.swift */; };
+		63A76C6929F5CCFC00E8CAB3 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A76C6829F5CCFC00E8CAB3 /* ColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		63A76C5529F5B76600E8CAB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63A76C5829F5B76600E8CAB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63A76C5A29F5B76600E8CAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A76C6029F5CCAE00E8CAB3 /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
+		63A76C6229F5CCBF00E8CAB3 /* RotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
+		63A76C6429F5CCDE00E8CAB3 /* PositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
+		63A76C6629F5CCEF00E8CAB3 /* OpacityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
+		63A76C6829F5CCFC00E8CAB3 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				63A76C5529F5B76600E8CAB3 /* Assets.xcassets */,
 				63A76C5729F5B76600E8CAB3 /* LaunchScreen.storyboard */,
 				63A76C5A29F5B76600E8CAB3 /* Info.plist */,
+				63A76C6029F5CCAE00E8CAB3 /* ScaleViewController.swift */,
+				63A76C6229F5CCBF00E8CAB3 /* RotationViewController.swift */,
+				63A76C6429F5CCDE00E8CAB3 /* PositionViewController.swift */,
+				63A76C6629F5CCEF00E8CAB3 /* OpacityViewController.swift */,
+				63A76C6829F5CCFC00E8CAB3 /* ColorViewController.swift */,
 			);
 			path = "25-TableViewBasicAnimation";
 			sourceTree = "<group>";
@@ -139,8 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				63A76C5129F5B76500E8CAB3 /* AnimationTableViewController.swift in Sources */,
+				63A76C6329F5CCBF00E8CAB3 /* RotationViewController.swift in Sources */,
+				63A76C6929F5CCFC00E8CAB3 /* ColorViewController.swift in Sources */,
+				63A76C6729F5CCEF00E8CAB3 /* OpacityViewController.swift in Sources */,
 				63A76C4D29F5B76500E8CAB3 /* AppDelegate.swift in Sources */,
+				63A76C6529F5CCDE00E8CAB3 /* PositionViewController.swift in Sources */,
 				63A76C4F29F5B76500E8CAB3 /* SceneDelegate.swift in Sources */,
+				63A76C6129F5CCAE00E8CAB3 /* ScaleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
