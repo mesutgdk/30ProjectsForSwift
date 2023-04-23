@@ -9,12 +9,21 @@ import UIKit
 
 class ScaleViewController: UIViewController {
 
+    
+    @IBOutlet weak var scaleImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .red
+        scaleImage.alpha = 0
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveLinear, animations: { [self] in
+            scaleImage.transform = CGAffineTransform(scaleX: 2, y: 2)
+            scaleImage.alpha = 1
+            
+            }, completion: nil )
+    }
 
     /*
     // MARK: - Navigation

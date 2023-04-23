@@ -9,21 +9,31 @@ import UIKit
 
 class RotationViewController: UIViewController {
 
+    @IBOutlet weak var upLeftImage: UIImageView!
+    @IBOutlet weak var upRightImage: UIImageView!
+    @IBOutlet weak var middleImage: UIImageView!
+    @IBOutlet weak var downLeftImage: UIImageView!
+    @IBOutlet weak var downRightImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .purple
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        rotate()
     }
-    */
+    func rotate () {
+        UIView.animate(withDuration: 0.8, delay: 0, options: .curveLinear, animations: { [self] in
+            upLeftImage.transform = upLeftImage.transform.rotated(by: CGFloat(Double.pi))
+           upRightImage.transform = upRightImage.transform.rotated(by: CGFloat(Double.pi))
+            middleImage.transform = middleImage.transform.rotated(by: CGFloat(Double.pi))
+            downRightImage.transform = downRightImage.transform.rotated(by: CGFloat(Double.pi))
+            downLeftImage.transform = downLeftImage.transform.rotated(by: CGFloat(Double.pi))
+            }) { (finished) -> Void in
+                self.rotate()
+        }
+    }
 
 }

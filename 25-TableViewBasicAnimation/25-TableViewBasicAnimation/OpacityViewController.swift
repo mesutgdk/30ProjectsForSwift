@@ -9,21 +9,22 @@ import UIKit
 
 class OpacityViewController: UIViewController {
 
+    @IBOutlet weak var opacityImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .yellow
+        view.backgroundColor = .black
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 1.5) { [self] in
+           opacityImage.alpha = 0
+        }
     }
-    */
 
 }

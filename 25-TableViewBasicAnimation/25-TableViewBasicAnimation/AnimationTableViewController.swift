@@ -30,7 +30,7 @@ class AnimationTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let selectedItem = menuList[indexPath.row]
-        print(selectedItem)
+//        print(selectedItem)
         performSegue(withIdentifier: selectedItem, sender: self)
     }
 
