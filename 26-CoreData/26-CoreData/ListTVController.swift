@@ -6,15 +6,17 @@
 //
 
 import UIKit
+import CoreData
 
 class ListTVController: UITableViewController {
     
     let cCell = "listCell"
     
-    let listData : [String] = [""]
+    var listData : [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listData.count
@@ -26,7 +28,26 @@ class ListTVController: UITableViewController {
         return cell
     }
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+//        print("button pressed")
+
+        var textField = UITextField()
         
+        let alert = UIAlertController(title: "Add New Topic", message: "", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Add Topic", style: .default) { (action) in
+                        
+            self.listData.append(textField.text!)
+            self.tableView.reloadData()
+            
+           }
+        alert.addAction(action)
+        alert.addTextField { alertTextField in
+            alertTextField.placeholder = "Create a New Task"
+            textField = alertTextField
+        
+        }
+       present(alert, animated: true, completion: nil)
+
     }
     
 }
