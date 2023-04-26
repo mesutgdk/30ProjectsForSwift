@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="1543" y="-176"/>
         </scene>
-        <!--First View Controller-->
+        <!--Relatives-->
         <scene sceneID="0XH-2K-oQY">
             <objects>
                 <viewController id="sqK-tx-JHf" customClass="FirstViewController" customModule="_7_TabBarApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="1Fc-6s-Qu4"/>
                                                         <constraint firstAttribute="height" constant="25" id="GYr-WV-ota"/>
-                                                        <constraint firstAttribute="width" constant="125" id="qle-Cl-9ao"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="qle-Cl-9ao"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -75,7 +75,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gz-fo-o4X">
-                                                    <rect key="frame" x="273" y="74" width="100" height="25"/>
+                                                    <rect key="frame" x="273" y="74" width="41.333333333333314" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="RMV-GM-Ydw"/>
                                                         <constraint firstAttribute="height" constant="25" id="fd3-xn-smI"/>
@@ -86,6 +86,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="1Gz-fo-o4X" secondAttribute="trailing" constant="78.666666666666686" id="34r-ZS-lmO"/>
                                                 <constraint firstItem="pbF-9x-mRn" firstAttribute="leading" secondItem="iCh-ic-Baa" secondAttribute="leading" constant="8" id="4Hz-0R-PsY"/>
                                                 <constraint firstItem="1Gz-fo-o4X" firstAttribute="leading" secondItem="aTt-bt-70i" secondAttribute="trailing" constant="20" id="53P-vI-QYZ"/>
                                                 <constraint firstItem="1Gz-fo-o4X" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aTt-bt-70i" secondAttribute="trailing" constant="8" symbolic="YES" id="Nxp-0N-iNq"/>
@@ -93,7 +94,6 @@
                                                 <constraint firstItem="tFt-J3-2xl" firstAttribute="leading" secondItem="pbF-9x-mRn" secondAttribute="trailing" constant="20" id="aPj-qq-eSr"/>
                                                 <constraint firstItem="aTt-bt-70i" firstAttribute="leading" secondItem="pbF-9x-mRn" secondAttribute="trailing" constant="20" id="hSB-zL-DIq"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="1Gz-fo-o4X" secondAttribute="bottom" constant="10" id="ihc-JI-hds"/>
-                                                <constraint firstItem="1Gz-fo-o4X" firstAttribute="trailing" secondItem="iCh-ic-Baa" secondAttribute="trailingMargin" id="kzP-1e-0nJ"/>
                                                 <constraint firstAttribute="bottom" secondItem="pbF-9x-mRn" secondAttribute="bottom" constant="10" id="l8Q-rg-sAo"/>
                                                 <constraint firstItem="pbF-9x-mRn" firstAttribute="top" secondItem="iCh-ic-Baa" secondAttribute="top" constant="10" id="osg-le-Aid"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="aTt-bt-70i" secondAttribute="bottom" constant="10" id="pZa-Pt-iuK"/>
@@ -101,7 +101,6 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="1Gz-fo-o4X" secondAttribute="bottom" constant="10" id="tdw-zC-aAH"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="aTt-bt-70i" secondAttribute="bottom" constant="10" id="tmj-8N-mOu"/>
                                                 <constraint firstItem="tFt-J3-2xl" firstAttribute="top" secondItem="iCh-ic-Baa" secondAttribute="topMargin" constant="10" id="v5Z-gH-qTi"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="1Gz-fo-o4X" secondAttribute="trailing" constant="25" id="xZ5-fM-fg2"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -123,7 +122,7 @@
                             <constraint firstItem="PJl-e8-xz2" firstAttribute="top" secondItem="qPR-lb-BNa" secondAttribute="top" id="tje-pK-OwG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VhS-G2-jhQ"/>
+                    <navigationItem key="navigationItem" title="Relatives" id="VhS-G2-jhQ"/>
                     <connections>
                         <outlet property="fTableView" destination="PJl-e8-xz2" id="ZIt-WJ-Vbe"/>
                     </connections>
