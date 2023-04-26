@@ -8,22 +8,29 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    @IBOutlet weak var jobImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        jobImage.alpha = 0
+        jobImage.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        
+            super.viewDidAppear(animated)
+            
+        UIView.animate(withDuration: 0.4, delay: 0.1, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: { [self] in
+                jobImage.transform = CGAffineTransform(scaleX: 1, y: 1)
+                jobImage.alpha = 1
+                
+                }, completion: nil )
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        jobImage.alpha = 0
+        jobImage.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
