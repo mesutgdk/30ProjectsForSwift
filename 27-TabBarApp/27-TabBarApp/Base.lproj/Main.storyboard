@@ -161,7 +161,7 @@
             </objects>
             <point key="canvasLocation" x="2435.8778625954196" y="1409.8591549295775"/>
         </scene>
-        <!--Item 1-->
+        <!--My Account-->
         <scene sceneID="3HL-yf-GBg">
             <objects>
                 <viewController id="rSR-8w-dS7" customClass="ThirdViewController" customModule="_7_TabBarApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -169,7 +169,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hNw-cv-RQA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myAccount" translatesAutoresizingMaskIntoConstraints="NO" id="hNw-cv-RQA">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
@@ -182,7 +182,10 @@
                             <constraint firstItem="hNw-cv-RQA" firstAttribute="top" secondItem="x49-My-rhO" secondAttribute="top" id="o9r-9H-xvA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="mV5-QA-Rol"/>
+                    <tabBarItem key="tabBarItem" title="My Account" image="person.circle" catalog="system" id="mV5-QA-Rol"/>
+                    <connections>
+                        <outlet property="myAccountImage" destination="hNw-cv-RQA" id="alW-LR-Zpp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kfq-bq-HHJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,7 +235,9 @@
     </scenes>
     <resources>
         <image name="jobs" width="442.5" height="800"/>
+        <image name="myAccount" width="443" height="800"/>
         <image name="newspaper.circle" catalog="system" width="128" height="123"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="photo.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
