@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A7E577FE-867A-41BD-9A0F-19D2ACB64477"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21C019D2-977E-44F7-B98C-39367E009C10"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "28-SpotlightSearchApp/MovieData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "MovieData"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "21C019D2-977E-44F7-B98C-39367E009C10 - 97f27c3516d720ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.MovieData.deinit"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/MovieData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "21C019D2-977E-44F7-B98C-39367E009C10 - a3ced15dfb341770"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.MovieData.__deallocating_deinit"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/MovieData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "21C019D2-977E-44F7-B98C-39367E009C10 - 5798cc24e09e77d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.MovieData.__allocating_init() -&gt; _8_SpotlightSearchApp.MovieData"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/MovieData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "21C019D2-977E-44F7-B98C-39367E009C10 - e71f7dbb8c046df7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.MovieData.init() -&gt; _8_SpotlightSearchApp.MovieData"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/MovieData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
