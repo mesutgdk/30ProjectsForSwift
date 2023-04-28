@@ -15,6 +15,7 @@
 		634E8F7829FAFC96009EBE2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634E8F7629FAFC96009EBE2F /* LaunchScreen.storyboard */; };
 		634E8F8429FB0976009EBE2F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E8F8329FB0976009EBE2F /* TableViewController.swift */; };
 		634E8F8629FB0996009EBE2F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E8F8529FB0996009EBE2F /* TableViewCell.swift */; };
+		634E8F8829FB0FB2009EBE2F /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E8F8729FB0FB2009EBE2F /* MovieData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		634E8F7929FAFC96009EBE2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		634E8F8329FB0976009EBE2F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		634E8F8529FB0996009EBE2F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		634E8F8729FB0FB2009EBE2F /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				634E8F8329FB0976009EBE2F /* TableViewController.swift */,
 				634E8F8529FB0996009EBE2F /* TableViewCell.swift */,
 				634E8F6F29FAFC94009EBE2F /* ViewController.swift */,
+				634E8F8729FB0FB2009EBE2F /* MovieData.swift */,
 				634E8F7129FAFC94009EBE2F /* Main.storyboard */,
 				634E8F7429FAFC96009EBE2F /* Assets.xcassets */,
 				634E8F7629FAFC96009EBE2F /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634E8F8829FB0FB2009EBE2F /* MovieData.swift in Sources */,
 				634E8F8629FB0996009EBE2F /* TableViewCell.swift in Sources */,
 				634E8F7029FAFC94009EBE2F /* ViewController.swift in Sources */,
 				634E8F6C29FAFC94009EBE2F /* AppDelegate.swift in Sources */,
