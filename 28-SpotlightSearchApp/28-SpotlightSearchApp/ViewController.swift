@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     let movieData = MovieData()
     
+    @IBOutlet weak var backgroundView: UIImageView!
     @IBOutlet weak var movieImage: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieType: UILabel!
@@ -23,6 +24,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        movieRating.layer.masksToBounds = true
+        movieRating.layer.cornerRadius = 25
         loadCell()
         
     }
@@ -37,6 +40,9 @@ class ViewController: UIViewController {
             movieTitle.text = roadWay.movieTitle
             movieStars.text = roadWay.movieStars
             movieType.text = roadWay.movieType
+            backgroundView.image = UIImage(named: roadWay.imageName)
+            backgroundView.alpha = 0.15
+            
         }
     }
 
