@@ -10,7 +10,9 @@ import UIKit
 class TableViewController: UITableViewController {
 
     let cCell = "tableCell"
+    let cellSegue = "goToCell"
     let movieData = MovieData()
+    var selectedRow : Int = 0
     
     
     override func viewDidLoad() {
@@ -42,22 +44,33 @@ class TableViewController: UITableViewController {
         cell.movieDirector?.text = roadPath.movieDirector
         cell.movieDescription?.text = roadPath.movieDescription
         cell.movieRating.layer.masksToBounds = true
-        cell.movieRating.layer.cornerRadius = 10
+        cell.movieRating.layer.cornerRadius = 25
         
    
         
         
         return cell
     }
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedRow = indexPath.row
+        performSegue(withIdentifier: cellSegue, sender: self)
     }
-    */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == cellSegue {
+            let destinationVC = segue.destination as! ViewController
+            
+            destinationVC.selectedRowNum = selectedRow
+//            destinationVC.movieDescription?.text = movieData.movieFile[selectedRow].movieDescription
+//            destinationVC.movieDirector?.text = movieData.movieFile[selectedRow].movieDirector
+//            destinationVC.movieImage?.image = UIImage(named: movieData.movieFile[selectedRow].imageName)
+//            destinationVC.movieRating?.text = movieData.movieFile[selectedRow].movieRating
+//            destinationVC.movieStars?.text = movieData.movieFile[selectedRow].movieStars
+//            destinationVC.movieTitle?.text = movieData.movieFile[selectedRow].movieTitle
+//            destinationVC.movieType?.text = movieData.movieFile[selectedRow].movieType
+            
+            
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

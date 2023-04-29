@@ -47,7 +47,7 @@
                                                 <constraint firstAttribute="width" constant="50" id="fbd-Qv-8kw"/>
                                                 <constraint firstAttribute="height" constant="50" id="kaR-qM-je3"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -119,12 +119,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="Me6-vQ-MhP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nms-EO-Enr">
-                                <rect key="frame" x="173.33333333333334" y="207" width="43.666666666666657" height="100"/>
+                                <rect key="frame" x="130" y="207" width="87" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="j46-4v-ujp"/>
                                 </constraints>
@@ -157,12 +157,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDZ-8x-mrH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDZ-8x-mrH">
                                 <rect key="frame" x="16" y="723" width="361" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="2fg-Ep-MD6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -184,9 +184,9 @@
                             <constraint firstItem="LUc-26-o6I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="ZM9-eL-y12"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UHD-fv-kwN" secondAttribute="trailing" constant="16" id="Zds-RH-wib"/>
                             <constraint firstItem="k4M-6S-YJI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ze1-HP-UqC"/>
-                            <constraint firstItem="fbx-Rl-1GE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nms-EO-Enr" secondAttribute="trailing" constant="8" symbolic="YES" id="Zf0-Io-Jxp"/>
+                            <constraint firstItem="fbx-Rl-1GE" firstAttribute="leading" secondItem="Nms-EO-Enr" secondAttribute="trailing" constant="10" id="Zf0-Io-Jxp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xXU-Oo-1JY" secondAttribute="trailing" constant="16" id="clv-pl-wMk"/>
-                            <constraint firstItem="Nms-EO-Enr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="173.33333333333334" id="rGp-oe-rBE"/>
+                            <constraint firstItem="Nms-EO-Enr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="rGp-oe-rBE"/>
                             <constraint firstItem="Nms-EO-Enr" firstAttribute="top" secondItem="k4M-6S-YJI" secondAttribute="bottom" constant="10" id="tgK-LN-Lmb"/>
                             <constraint firstItem="xXU-Oo-1JY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wgF-5X-HoO"/>
                             <constraint firstItem="fbx-Rl-1GE" firstAttribute="leading" secondItem="k4M-6S-YJI" secondAttribute="trailing" constant="8" id="wyq-xK-UJr"/>
