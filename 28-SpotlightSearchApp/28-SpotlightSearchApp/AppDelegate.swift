@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewController = (window?.rootViewController as! UINavigationController).viewControllers[0] as! ViewController
         viewController.restoreUserActivityState(userActivity)
         
+        
         return true
     }
     // MARK: UISceneSession Lifecycle

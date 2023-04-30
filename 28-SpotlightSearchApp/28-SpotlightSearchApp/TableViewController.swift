@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreSpotlight
+import MobileCoreServices
 
 class TableViewController: UITableViewController {
 
@@ -18,50 +19,59 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupSearchableContent()
 
     }
+    
+    
+    
+    
     func setupSearchableContent() {
-        var searchableItems = [CSSearchableItem]()
         
+//        let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+//        let basePath = path[0]
+        
+        var searchableItems = [CSSearchableItem]()
+
         for i in 0...(movieData.movieFile.count - 1) {
-            
+
             let movie = movieData.movieFile[i]
-            let searchableItemAttributeSet = CSSearchableItemAttributeSet()
-            
+            let searchableItemAttributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
+
             //set the title
             searchableItemAttributeSet.title = movie.movieTitle
-            
+
             //set the image
             let imagePathParts = movie.movieTitle.components(separatedBy: ".")
-            searchableItemAttributeSet.thumbnailURL = Bundle.main.url(forResource: imagePathParts[0], withExtension: imagePathParts[1])
-            
+            searchableItemAttributeSet.path = imagePathParts[0]
+
             // Set the description.
             searchableItemAttributeSet.contentDescription = movie.movieDescription
-            
+
             var keywords = [String]()
             let movieCategories = movie.movieType.components(separatedBy: ", ")
             for movieCategory in movieCategories {
                 keywords.append(movieCategory)
             }
-            
+
             let stars = movie.movieStars.components(separatedBy: ", ")
             for star in stars {
                 keywords.append(star)
             }
-            
+
             searchableItemAttributeSet.keywords = keywords
-            
+
             let searchableItem = CSSearchableItem(uniqueIdentifier: "com.appcoda.SpotIt.\(i)", domainIdentifier: "movies", attributeSet: searchableItemAttributeSet)
-            
+
             searchableItems.append(searchableItem)
-            
+
             CSSearchableIndex.default().indexSearchableItems(searchableItems) {
                 if $0 != nil {
                     print($0!.localizedDescription)
                 }
             }
         }
+        print(searchableItems.count)
     }
 
 
