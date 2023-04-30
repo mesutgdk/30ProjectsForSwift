@@ -6,6 +6,10 @@
 //
 
 import Foundation
+import CoreSpotlight
+import MobileCoreServices
+
+
 
 struct Movie {
     var imageName : String
@@ -15,6 +19,12 @@ struct Movie {
     var movieDirector : String
     var movieRating : String
     var movieStars : String
+    var searchableItem: CSSearchableItem {
+            let attributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
+            attributeSet.title = movieTitle
+            attributeSet.contentDescription = "Director: \(movieDirector), Description: \(movieDescription)"
+            return CSSearchableItem(uniqueIdentifier: movieTitle, domainIdentifier: "foranewlife.-8-SpotlightSearchApp", attributeSet: attributeSet)
+        }
     }
 
 class MovieData {
@@ -29,3 +39,4 @@ class MovieData {
         
     ]
 }
+

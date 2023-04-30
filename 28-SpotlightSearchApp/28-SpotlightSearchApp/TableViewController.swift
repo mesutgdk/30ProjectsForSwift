@@ -20,10 +20,19 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSearchableContent()
-
+indexMoviesForSpotlightSearch()
     }
     
-    
+    func indexMoviesForSpotlightSearch() {
+        let searchableItems = movieData.movieFile.map { $0.searchableItem }
+        CSSearchableIndex.default().indexSearchableItems(searchableItems) { error in
+            if let error = error {
+                print("Error indexing searchable items: \(error.localizedDescription)")
+            } else {
+                print("Searchable items indexed successfully")
+            }
+        }
+    }
     
     
     func setupSearchableContent() {
@@ -61,7 +70,7 @@ class TableViewController: UITableViewController {
 
             searchableItemAttributeSet.keywords = keywords
 
-            let searchableItem = CSSearchableItem(uniqueIdentifier: "com.appcoda.SpotIt.\(i)", domainIdentifier: "movies", attributeSet: searchableItemAttributeSet)
+            let searchableItem = CSSearchableItem(uniqueIdentifier: "foranewlife.-8-SpotlightSearchApp.\(i)", domainIdentifier: "movies", attributeSet: searchableItemAttributeSet)
 
             searchableItems.append(searchableItem)
 
