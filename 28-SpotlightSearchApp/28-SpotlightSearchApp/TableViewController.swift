@@ -15,72 +15,88 @@ class TableViewController: UITableViewController {
     let cellSegue = "goToCell"
     let movieData = MovieData()
     var selectedRow : Int = 0
+    var matches: [SpotlightModel] = [SpotlightModel]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSearchableContent()
-indexMoviesForSpotlightSearch()
+//        indexMoviesForSpotlightSearch()
     }
     
-    func indexMoviesForSpotlightSearch() {
-        let searchableItems = movieData.movieFile.map { $0.searchableItem }
-        CSSearchableIndex.default().indexSearchableItems(searchableItems) { error in
-            if let error = error {
-                print("Error indexing searchable items: \(error.localizedDescription)")
-            } else {
-                print("Searchable items indexed successfully")
-            }
-        }
-    }
+//    func indexMoviesForSpotlightSearch() {
+//        let searchableItems = movieData.movieFile.map { $0.searchableItem }
+//        CSSearchableIndex.default().indexSearchableItems(searchableItems) { error in
+//            if let error = error {
+//                print("Error indexing searchable items: \(error.localizedDescription)")
+//            } else {
+//                print("Searchable items indexed successfully")
+//            }
+//        }
+//    }
     
     
     func setupSearchableContent() {
-        
-//        let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-//        let basePath = path[0]
-        
+        let screen = SpotlightModel(id: "1", title: "movies", content: "movies", keywords: ["movies"])
+        matches.append(screen)
         var searchableItems = [CSSearchableItem]()
-
-        for i in 0...(movieData.movieFile.count - 1) {
-
-            let movie = movieData.movieFile[i]
-            let searchableItemAttributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
-
-            //set the title
-            searchableItemAttributeSet.title = movie.movieTitle
-
-            //set the image
-            let imagePathParts = movie.movieTitle.components(separatedBy: ".")
-            searchableItemAttributeSet.path = imagePathParts[0]
-
-            // Set the description.
-            searchableItemAttributeSet.contentDescription = movie.movieDescription
-
-            var keywords = [String]()
-            let movieCategories = movie.movieType.components(separatedBy: ", ")
-            for movieCategory in movieCategories {
-                keywords.append(movieCategory)
-            }
-
-            let stars = movie.movieStars.components(separatedBy: ", ")
-            for star in stars {
-                keywords.append(star)
-            }
-
-            searchableItemAttributeSet.keywords = keywords
-
-            let searchableItem = CSSearchableItem(uniqueIdentifier: "foranewlife.-8-SpotlightSearchApp.\(i)", domainIdentifier: "movies", attributeSet: searchableItemAttributeSet)
-
-            searchableItems.append(searchableItem)
-
-            CSSearchableIndex.default().indexSearchableItems(searchableItems) {
-                if $0 != nil {
-                    print($0!.localizedDescription)
+                for match in matches {
+                    let searchItemAttributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
+                    searchItemAttributeSet.title = match.title
+                    searchItemAttributeSet.contentDescription = match.content
+                    searchItemAttributeSet.keywords = match.keywords
+                    
+                    let searchableItem = CSSearchableItem(uniqueIdentifier: match.id, domainIdentifier: "matches", attributeSet: searchItemAttributeSet)
+                    searchableItems.append(searchableItem)
                 }
-            }
-        }
-        print(searchableItems.count)
+            CSSearchableIndex.default().indexSearchableItems(searchableItems) { (error) -> Void in
+                    if error != nil {
+                        print(error?.localizedDescription ?? "Error")
+                    }
+                }
+        
+//        var searchableItems = [CSSearchableItem]()
+//
+//        for i in 0...(movieData.movieFile.count - 1) {
+//
+//            let movie = movieData.movieFile[i]
+//            let searchableItemAttributeSet = CSSearchableItemAttributeSet(contentType: .text)
+////            kUTTypeText as String
+//
+//            //set the title
+//            searchableItemAttributeSet.title = movie.movieTitle
+//
+//            //set the image
+//            let imagePathParts = movie.movieTitle.components(separatedBy: ".")
+//            searchableItemAttributeSet.path = imagePathParts[0]
+//
+//            // Set the description.
+//            searchableItemAttributeSet.contentDescription = movie.movieDescription
+//
+//            var keywords = [String]()
+//            let movieCategories = movie.movieType.components(separatedBy: ", ")
+//            for movieCategory in movieCategories {
+//                keywords.append(movieCategory)
+//            }
+//
+//            let stars = movie.movieStars.components(separatedBy: ", ")
+//            for star in stars {
+//                keywords.append(star)
+//            }
+//
+//            searchableItemAttributeSet.keywords = keywords
+//
+//            let searchableItem = CSSearchableItem(uniqueIdentifier: "movie\(i)", domainIdentifier: "foranewlife.-8-SpotlightSearchApp", attributeSet: searchableItemAttributeSet)
+//
+//            searchableItems.append(searchableItem)
+//
+//            CSSearchableIndex.default().indexSearchableItems(searchableItems) {
+//                if $0 != nil {
+//                    print($0!.localizedDescription)
+//                }
+//            }
+//        }
+//        print(searchableItems.count)
     }
 
 
@@ -136,4 +152,10 @@ indexMoviesForSpotlightSearch()
     }
    
 
+}
+struct SpotlightModel{
+    var id : String
+    var title: String
+    var content: String
+    var keywords: [String]
 }

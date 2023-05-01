@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import CoreSpotlight
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -18,26 +19,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        let viewController = (window?.rootViewController as! UINavigationController).viewControllers[0] as! ViewController
-        viewController.restoreUserActivityState(userActivity)
-        
-        
+        if userActivity.activityType == CSSearchableItemActionType {
+            if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
+                if(uniqueIdentifier == "1") {
+                    let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let homePage = mainStoryboard.instantiateViewController(withIdentifier: "movies") as! TableViewController
+                    self.window?.rootViewController = homePage
+                }
+                window?.makeKeyAndVisible()
+            }
+        }
+//        if userActivity.activityType == CSSearchableItemActionType {
+//            if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
+//
+//                let viewController = (window?.rootViewController as! UINavigationController).viewControllers[0] as! ViewController
+//                viewController.restoreUserActivityState(userActivity)
+//            }
+//        }
         return true
     }
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
+   
 
 }
 

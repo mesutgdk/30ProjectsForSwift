@@ -12,7 +12,7 @@
         <!--Movies-->
         <scene sceneID="29D-Z8-pko">
             <objects>
-                <tableViewController id="UjK-Qp-cMR" customClass="TableViewController" customModule="_8_SpotlightSearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="movies" id="UjK-Qp-cMR" customClass="TableViewController" customModule="_8_SpotlightSearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="MLG-Nk-P11">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

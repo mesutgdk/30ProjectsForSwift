@@ -79,6 +79,180 @@
                   endingLineNumber = "21"
                   offsetFromSymbolStart = "56">
                </Location>
+               <Location
+                  uuid = "21C019D2-977E-44F7-B98C-39367E009C10 - 97f27c3516d72241"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.MovieData.deinit"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/MovieData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "21C019D2-977E-44F7-B98C-39367E009C10 - e71f7dbb8c046f09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.MovieData.init() -&gt; _8_SpotlightSearchApp.MovieData"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/MovieData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12B93BC0-767A-4721-8658-48DAAED912B9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "28-SpotlightSearchApp/TableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "setupSearchableContent()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "12B93BC0-767A-4721-8658-48DAAED912B9 - 8ccf3f3b21d3f38b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.TableViewController.setupSearchableContent() -&gt; ()"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "932">
+               </Location>
+               <Location
+                  uuid = "12B93BC0-767A-4721-8658-48DAAED912B9 - 8ccf3f3b21d3f3c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.TableViewController.setupSearchableContent() -&gt; ()"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4ED1A12-8A1D-45AE-9E88-D935F15DC46E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "28-SpotlightSearchApp/TableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "setupSearchableContent()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F4ED1A12-8A1D-45AE-9E88-D935F15DC46E - 8ccf3f3b21d3f2e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.TableViewController.setupSearchableContent() -&gt; ()"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "1220">
+               </Location>
+               <Location
+                  uuid = "F4ED1A12-8A1D-45AE-9E88-D935F15DC46E - 8ccf3f3b21d3f283"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.TableViewController.setupSearchableContent() -&gt; ()"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "863FE1F3-6C94-409D-A7BD-70F58A63D0F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "28-SpotlightSearchApp/TableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "setupSearchableContent()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "863FE1F3-6C94-409D-A7BD-70F58A63D0F6 - 8ccf3f3b21d3f05c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.TableViewController.setupSearchableContent() -&gt; ()"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "1916">
+               </Location>
+               <Location
+                  uuid = "863FE1F3-6C94-409D-A7BD-70F58A63D0F6 - 8ccf3f3b21d3f05c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_8_SpotlightSearchApp.TableViewController.setupSearchableContent() -&gt; ()"
+                  moduleName = "28-SpotlightSearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mesutgdk/Desktop/30Projects%20ForSwift/28-SpotlightSearchApp/28-SpotlightSearchApp/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "1788">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
