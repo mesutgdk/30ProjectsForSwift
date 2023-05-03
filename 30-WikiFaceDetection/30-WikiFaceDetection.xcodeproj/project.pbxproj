@@ -13,6 +13,7 @@
 		631118BB2A02BAF900D57533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631118B92A02BAF900D57533 /* Main.storyboard */; };
 		631118BD2A02BAFA00D57533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631118BC2A02BAFA00D57533 /* Assets.xcassets */; };
 		631118C02A02BAFA00D57533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631118BE2A02BAFA00D57533 /* LaunchScreen.storyboard */; };
+		631118CA2A02DA8E00D57533 /* FaceRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631118C92A02DA8E00D57533 /* FaceRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		631118BC2A02BAFA00D57533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		631118BF2A02BAFA00D57533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		631118C12A02BAFA00D57533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631118C92A02DA8E00D57533 /* FaceRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				631118B32A02BAF900D57533 /* AppDelegate.swift */,
 				631118B52A02BAF900D57533 /* SceneDelegate.swift */,
 				631118B72A02BAF900D57533 /* ViewController.swift */,
+				631118C92A02DA8E00D57533 /* FaceRecognizer.swift */,
 				631118B92A02BAF900D57533 /* Main.storyboard */,
 				631118BC2A02BAFA00D57533 /* Assets.xcassets */,
 				631118BE2A02BAFA00D57533 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				631118B82A02BAF900D57533 /* ViewController.swift in Sources */,
 				631118B42A02BAF900D57533 /* AppDelegate.swift in Sources */,
+				631118CA2A02DA8E00D57533 /* FaceRecognizer.swift in Sources */,
 				631118B62A02BAF900D57533 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
