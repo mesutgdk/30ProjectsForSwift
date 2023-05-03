@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ImageIO
 
 class FaceRecognizer: NSObject {
 
@@ -13,6 +14,24 @@ class FaceRecognizer: NSObject {
         case CantDownloadImage
     }
     
-   class func faceForPerson
+    class func whosFace (who: String, size: CGSize, completion:(_ image: UIImage?, _ imageFound: Bool)->()) throws{
+        
+        let escapedString = who.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlHostAllowed)
+        
+        let pixelsForAPIRequest = Int(max(size.width, size.height))
+        
+        let url = URL(string: "https://en.wikipedia.org/w/api.php?action=query&titles=\(escapedString!)&prop=pageimages&format=json&pithumbsize=\(pixelsForAPIRequest)")
+        
+        guard let task:URLSessionTask? = URLSession.shared.dataTask(with: url!,completionHandler: { (data:Data?, response:URLResponse?, error:Error?) in
+            if error == nil {
+                let wikiDict = try! JSONSerialization.jsonObject(with: data!,options: JSONSerialization.ReadingOptions.fragmentsAllowed) as! NSDictionary
+                print(wikiDict)
+            }
+        }) else {
+            
+        }
+        task!.resume()
+        
+    }
     
 }

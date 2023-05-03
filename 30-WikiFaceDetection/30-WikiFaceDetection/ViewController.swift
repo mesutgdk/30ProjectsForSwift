@@ -20,7 +20,9 @@ class ViewController: UIViewController {
         
         appImage.image = UIImage(named: "appImage")
         fromWikiLabel.alpha = 0.6
-        
+        try! FaceRecognizer.whosFace(who: "Tom Hanks", size: CGSize(width: 200, height: 200), completion: { image, imageFound in
+            //
+        })
     }
 
 
