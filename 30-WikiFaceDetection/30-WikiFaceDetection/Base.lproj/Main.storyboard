@@ -36,7 +36,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hpG-Kw-epI">
-                                <rect key="frame" x="65" y="295" width="263" height="431"/>
+                                <rect key="frame" x="71.666666666666686" y="295" width="250" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="M2X-Tx-vNx"/>
+                                    <constraint firstAttribute="height" constant="400" id="VHK-er-EHd"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From ®Wikipedia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVo-Ga-eD7">
                                 <rect key="frame" x="58" y="737" width="276" height="21"/>
@@ -57,11 +61,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EH-2x-Pas">
+                                <rect key="frame" x="147" y="766" width="110" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Zoom It!">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zoomButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcJ-XL-fYQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hpG-Kw-epI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="1pt-UJ-dg5"/>
                             <constraint firstItem="5uU-nr-eUQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="59E-IO-FCi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UWd-j8-Pj5" secondAttribute="trailing" constant="50" id="7Uf-ys-VJf"/>
                             <constraint firstItem="MVo-Ga-eD7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="Bkj-Dx-sKb"/>
@@ -70,9 +84,8 @@
                             <constraint firstItem="gpF-X5-t82" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ItO-Ob-hzB"/>
                             <constraint firstItem="gpF-X5-t82" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ywm-8f-n32"/>
                             <constraint firstItem="UWd-j8-Pj5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Zvr-yz-g4g"/>
+                            <constraint firstItem="hpG-Kw-epI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cqW-gH-fqp"/>
                             <constraint firstItem="gKd-RS-kxE" firstAttribute="top" secondItem="5uU-nr-eUQ" secondAttribute="bottom" constant="8" symbolic="YES" id="fN9-Wi-SIj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hpG-Kw-epI" secondAttribute="trailing" constant="65" id="kAz-s5-8T0"/>
-                            <constraint firstItem="MVo-Ga-eD7" firstAttribute="top" secondItem="hpG-Kw-epI" secondAttribute="bottom" constant="11" id="oJx-wF-0xz"/>
                             <constraint firstItem="gKd-RS-kxE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qR8-ny-Bqs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MVo-Ga-eD7" secondAttribute="bottom" constant="60" id="qeY-Wu-8Rk"/>
                             <constraint firstItem="5uU-nr-eUQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sK4-nW-qR4"/>
@@ -87,6 +100,7 @@
                         <outlet property="fromWikiLabel" destination="MVo-Ga-eD7" id="Gbm-Av-wWz"/>
                         <outlet property="textField" destination="UWd-j8-Pj5" id="4JZ-lE-u6q"/>
                         <outlet property="wikiPersonImage" destination="hpG-Kw-epI" id="joh-u4-S0W"/>
+                        <outlet property="zoomButton" destination="0EH-2x-Pas" id="NeJ-kT-CJI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

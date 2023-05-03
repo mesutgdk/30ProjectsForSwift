@@ -14,6 +14,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var wikiPersonImage: UIImageView!
     @IBOutlet weak var fromWikiLabel: UILabel!
+    @IBOutlet weak var zoomButton: UIButton!
+    
+    var zoomed: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         fromWikiLabel.alpha = 0.6
         textField.delegate = self
     }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if let textFieldContent = textField.text {
             do {
@@ -29,6 +33,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     if imageFound {
                         DispatchQueue.main.async {
                             self.wikiPersonImage.image = image
+
+                                FaceRecognizer.centerTheFaceOnImage(imageView: self.wikiPersonImage)
+                            
                         }
                     }
                 })
@@ -40,6 +47,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
+    
+    @IBAction func zoomButtonPressed(_ sender: UIButton) {
+        if zoomed == false{
+//            FaceRecognizer.centerTheFaceOnImage(imageView: self.wikiPersonImage)
 
+            //call zoom func
+            zoomButton.setTitle("Zoom Out!", for: .normal)
+         
+            zoomed = true
+            
+        } else {
+            
+            zoomButton.setTitle("Zoom In!", for: .normal)
+           
+            zoomed = false
+        }
+    }
+    
 }
 

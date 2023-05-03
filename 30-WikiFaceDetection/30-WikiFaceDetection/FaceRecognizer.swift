@@ -48,4 +48,37 @@ class FaceRecognizer: NSObject {
         
     }
     
+    class func centerTheFaceOnImage(imageView: UIImageView) {
+        let context = CIContext(options: nil)
+        let options = [CIDetectorAccuracy:CIDetectorAccuracyHigh]
+        let detector = CIDetector(ofType: CIDetectorTypeFace, context: context, options: options)!
+        
+        let faceImage = imageView.image
+        let ciImage = CIImage(cgImage: faceImage!.cgImage!)
+        
+        let features = detector.features(in: ciImage)
+        
+        if features.count > 0 {
+            var face: CIFaceFeature!
+            
+            for rect in features{
+                face = rect as! CIFaceFeature
+            }
+            var faceRectWithExtendedBounds = face.bounds
+            faceRectWithExtendedBounds.origin.x -= 20
+            faceRectWithExtendedBounds.origin.y -= 30
+            
+            faceRectWithExtendedBounds.size.width += 40
+            faceRectWithExtendedBounds.size.height += 60
+            
+            let x = faceRectWithExtendedBounds.origin.x / faceImage!.size.width
+            let y = (faceImage!.size.height - faceRectWithExtendedBounds.origin.y - faceRectWithExtendedBounds.size.height) / faceImage!.size.height
+            let withFace = faceRectWithExtendedBounds.size.width / faceImage!.size.width
+            let heightface = faceRectWithExtendedBounds.size.height / faceImage!.size.height
+            
+            imageView.layer.contentsRect = CGRect(x: x, y: y, width: withFace, height: heightface)
+        }
+//        print( "it is done")
+    }
+    
 }
