@@ -62,7 +62,7 @@ class FaceRecognizer: NSObject {
             var face: CIFaceFeature!
             
             for rect in features{
-                face = rect as! CIFaceFeature
+                face = (rect as! CIFaceFeature)
             }
             var faceRectWithExtendedBounds = face.bounds
             faceRectWithExtendedBounds.origin.x -= 20
