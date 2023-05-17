@@ -23,7 +23,7 @@ Doing 30 projects containing swift's core functions🫡
 
 - Project 6 - Find My Location
 
-![gif6](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/d456369f-3817-4c55-9235-b638373d86e5)
+![gif6](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/95db60c5-d746-48a7-a6d0-fada2d61260a)
 
 - Project 7 - Pull To Refresh
 
