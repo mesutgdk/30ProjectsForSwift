@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63404B212A13E57F00D5DC3A /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63404B202A13E57F00D5DC3A /* VideoCell.swift */; };
 		A367610A29B472DA00B3A294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367610929B472DA00B3A294 /* AppDelegate.swift */; };
 		A367610C29B472DA00B3A294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367610B29B472DA00B3A294 /* SceneDelegate.swift */; };
 		A367610E29B472DA00B3A294 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367610D29B472DA00B3A294 /* PlayerViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63404B202A13E57F00D5DC3A /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		A367610629B472DA00B3A294 /* PlayLocalVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayLocalVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A367610929B472DA00B3A294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A367610B29B472DA00B3A294 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A367610929B472DA00B3A294 /* AppDelegate.swift */,
 				A367610B29B472DA00B3A294 /* SceneDelegate.swift */,
 				A367610D29B472DA00B3A294 /* PlayerViewController.swift */,
+				63404B202A13E57F00D5DC3A /* VideoCell.swift */,
 				A367610F29B472DA00B3A294 /* Main.storyboard */,
 				A367611229B472DC00B3A294 /* Assets.xcassets */,
 				A367611429B472DC00B3A294 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A367610E29B472DA00B3A294 /* PlayerViewController.swift in Sources */,
+				63404B212A13E57F00D5DC3A /* VideoCell.swift in Sources */,
 				A367610A29B472DA00B3A294 /* AppDelegate.swift in Sources */,
 				A367610C29B472DA00B3A294 /* SceneDelegate.swift in Sources */,
 			);

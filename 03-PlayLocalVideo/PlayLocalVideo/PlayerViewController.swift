@@ -15,11 +15,15 @@ class PlayerViewController: UITableViewController {
 
    // let array  = ["Hacı", "Veli", "Deli"]
     
+    let ofisText = ["Safety First","Work With Us","Safety First","Work With Us","Safety First","Work With Us","Safety First","Work With Us"]
+    
     let tableViewCellIdentifier = "PlayerCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: tableViewCellIdentifier)}
+//        tableView.register(VideoCell.self, forCellReuseIdentifier: tableViewCellIdentifier)
+        
+    }
     
     override func viewDidAppear(_ animated: Bool)
        {
@@ -77,23 +81,29 @@ class PlayerViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: tableViewCellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: tableViewCellIdentifier, for: indexPath) as! VideoCell
         
         let videoAsset = videos[indexPath.row]
+        print()
         
-        cell.textLabel?.text = "Video from \(videoAsset.creationDate ?? Date())"
+        cell.videoLabel?.text = ofisText[indexPath.row]
+//        cell.videoLabel?.text = "Video from \(videoAsset.creationDate ?? Date())"
                 
         // Load video thumbnail
         PHCachingImageManager.default().requestImage(for: videoAsset,
-                                                             targetSize: CGSize(width: 300, height: 300),
+                                                             targetSize: CGSize(width: 800, height: 200),
                                                      contentMode: .aspectFill,
                                                              options: nil) { (photo, _) in
                     
-                    cell.imageView?.image = photo
+            cell.videoImage?.image = photo
                     
                 }
         
     return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 210
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
