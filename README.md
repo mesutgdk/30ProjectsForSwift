@@ -21,4 +21,38 @@ Doing 30 projects containing swift's core functions🫡
 
 ![gif5](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/14e6488e-2fc8-46ea-8b07-4f720a0c2bf9)
 
+- Project 6 - Find My Location
+
+![gif6](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/d456369f-3817-4c55-9235-b638373d86e5)
+
+- Project 7 - Pull To Refresh
+
+![app7](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/aa1b338e-9a6b-4994-9b68-fe7134d88451)
+
+- Project 8 - Colorization
+
+![gif8](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/3c61b13f-880d-4ec9-87ff-254d63ac7d1d)
+
+- Project 9 - Image Scroll Effect
+
+
+- Project 10 - Video Background
+
+![app10](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/576506ac-900d-44e8-91d1-116a4199afbf)
+
+- Project 11 - Clear Tableview
+
+<img width="151" alt="photo11" src="https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/80b6dfd5-6378-4a27-99e3-c5e804149ab6">
+
+- Project 12 - Login Animation
+
+
+- Project 13 - Animate Table
+
+
+
+
+
+
+
 
