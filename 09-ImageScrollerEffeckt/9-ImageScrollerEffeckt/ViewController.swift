@@ -63,6 +63,9 @@ class ViewController: UIViewController {
         let verticalSpace = imageViewSize.height < scrollViewSize.height ? (scrollViewSize.height - imageViewSize.height) / 2 : 0
         scrollView.contentInset = UIEdgeInsets(top: verticalSpace, left: horizantalSpace, bottom: verticalSpace, right: horizantalSpace)
     }
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
 }
 extension ViewController: UIScrollViewDelegate{
     
