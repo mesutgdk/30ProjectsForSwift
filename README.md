@@ -35,6 +35,7 @@ Doing 30 projects containing swift's core functions🫡
 
 - Project 9 - Image Scroll Effect
 
+![gif9](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/000b6ed1-865d-473d-b3c4-71530de1760c)
 
 - Project 10 - Video Background
 
@@ -52,10 +53,54 @@ Doing 30 projects containing swift's core functions🫡
 
 ![gif13](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/59127a29-eedb-401d-ab33-1e92ab4b2da1)
 
-- 
+- Project 14 - Slot Machine
+
+![giff14](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/795f8b64-e96e-4a34-a8e1-e78bd924f926)
+
+- Project 15 - Animated Splash
+
+![gif15](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/24c37b20-f5ca-4b31-9143-7c9aa7647304)
+
+- Project 16 - Slide Menu
 
 
+- Project 17- Tumblr Menu
 
 
+- Project 18 - Limit The Character
 
 
+- Project 19 - Pull To Refresh
+
+
+- Project 20 - Collecionview Animation
+
+
+- Project 21 - Swipeable Cell
+
+
+- Project 22 - 3D Touch Quick Action
+
+
+- Project 23 - Side Menu
+
+
+- Project 24 - Mosaic Layout
+
+
+- Project 25 - Tableview Basic Animation
+
+
+- Project 26 - CoreData
+
+
+- Project 27 - Tab Bar App
+
+
+- Project 28 - Spotlight Search App
+
+
+- Project 29 - Profile Photo Picker
+
+
+- Project 30 - WikiFace Detection
