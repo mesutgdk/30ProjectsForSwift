@@ -75,15 +75,19 @@ Doing 30 projects containing swift's core functions🫡
 
 - Project 19 - Pull To Refresh
 
+![giff19](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/68ade768-9635-49a2-9280-f7052c3a3f44)
 
 - Project 20 - Collecionview Animation
 
+![giff20](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/711682fc-fcea-467e-a6ea-a4a0120a55c3)
 
 - Project 21 - Swipeable Cell
 
+![giff21](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/2adf6fdf-b338-4af3-b2cf-f755aa255ba8)
 
 - Project 22 - 3D Touch Quick Action
 
+![giff22](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/a7291ff1-6622-4331-b56b-46d3cb2c35f7)
 
 - Project 23 - Side Menu
 
