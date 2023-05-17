@@ -95,21 +95,27 @@ Doing 30 projects containing swift's core functions🫡
 
 - Project 23 - Side Menu
 
+![giff23](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/2b50cf46-4809-411e-9fcc-47d53d1c2fe0)
 
 - Project 24 - Mosaic Layout
 
+![giff24](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/239c04da-9e59-484f-8aa3-fa7569a3f171)
 
 - Project 25 - Tableview Basic Animation
 
+![giff25](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/384bb81d-a18b-4246-9143-d5f44f0910e5)
 
 - Project 26 - CoreData
 
+![gif26](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/a8f96095-cea4-48a6-b33d-711fce0acc33)
 
 - Project 27 - Tab Bar App
 
+![giff27](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/2b2e74f6-b5e5-40f1-988c-2e2668561336)
 
 - Project 28 - Spotlight Search App
 
+![giff28](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/596f7163-24eb-481f-a70d-581b4676c214)
 
 - Project 29 - Profile Photo Picker
 
