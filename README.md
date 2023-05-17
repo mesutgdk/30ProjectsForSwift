@@ -119,5 +119,6 @@ Doing 30 projects containing swift's core functions🫡
 
 - Project 29 - Profile Photo Picker
 
+![giff29](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/3bd5e429-07ac-4142-9a25-f64a758595db)
 
 - Project 30 - WikiFace Detection
