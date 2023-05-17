@@ -1,5 +1,9 @@
 # 30ProjectsForSwift
+
+This project is totally inspired by Sam Lu's 100 Days of Swift project.
+
 Doing 30 projects containing swift's core functions🫡
+
 
 - Project 1 - Simple Timer
 
