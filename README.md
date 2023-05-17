@@ -46,10 +46,13 @@ Doing 30 projects containing swift's core functions🫡
 
 - Project 12 - Login Animation
 
+![giff12](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/c9028878-39a1-4d0d-86eb-7c1041e24842)
 
 - Project 13 - Animate Table
 
+![gif13](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/59127a29-eedb-401d-ab33-1e92ab4b2da1)
 
+- 
 
 
 
