@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zlM-4B-ycQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4KY-QT-J0l">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Istiklal Marşı-->
         <scene sceneID="7RZ-sB-niI">
             <objects>
                 <tableViewController id="zlM-4B-ycQ" customClass="TableViewController" customModule="_3_AnimeteTable" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,10 +35,29 @@
                             <outlet property="delegate" destination="zlM-4B-ycQ" id="Cqa-OI-P20"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Istiklal Marşı" id="0Hg-MH-ZCQ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZb-7w-01G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-492" y="-9"/>
+            <point key="canvasLocation" x="434.35114503816794" y="-9.1549295774647899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Ce-Ee-EFn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4KY-QT-J0l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7XJ-9I-tPZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zlM-4B-ycQ" kind="relationship" relationship="rootViewController" id="X3u-Uj-Y0M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LWj-Bq-xk8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-492.36641221374043" y="-9.1549295774647899"/>
         </scene>
     </scenes>
     <resources>
