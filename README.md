@@ -63,12 +63,15 @@ Doing 30 projects containing swift's core functions🫡
 
 - Project 16 - Slide Menu
 
+![gif16](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/6ff1867f-253a-4e9b-8b23-5a59c8977a10)
 
 - Project 17- Tumblr Menu
 
+![gif17](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/4db70c29-987d-41de-ac4a-5092b86586bf)
 
 - Project 18 - Limit The Character
 
+![giff18](https://github.com/mesutgdk/30ProjectsForSwift/assets/112901255/d8b74270-8a6b-4ef0-afdb-1a4bb25b7e46)
 
 - Project 19 - Pull To Refresh
 
